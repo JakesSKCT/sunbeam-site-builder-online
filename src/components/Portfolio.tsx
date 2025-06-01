@@ -41,7 +41,7 @@ const Portfolio = () => {
       title: "Grid-Tied System - Valota Farm",
       location: "Philippi, Cape Town",
       type: "Agricultural",
-      images: ["https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop"],
+      images: ["/lovable-uploads/16f3c88d-6ece-4a28-b50f-8d0858f0a6c6.png"],
       systemSize: "20kW",
       pvCapacity: "24kWp",
       batteryCapacity: "n/a",
