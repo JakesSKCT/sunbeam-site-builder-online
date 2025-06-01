@@ -1,9 +1,11 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import SolarFlowDiagram from "@/components/SolarFlowDiagram";
 import Portfolio from "@/components/Portfolio";
+import Packages from "@/components/Packages";
 import { Sun, Zap, Battery, Search, Award, Users, TrendingUp, AlertTriangle, Shield, MapPin, CloudSun } from "lucide-react";
 
 const Index = () => {
@@ -171,6 +173,9 @@ const Index = () => {
 
       {/* Portfolio Section */}
       <Portfolio />
+
+      {/* Packages Section */}
+      <Packages />
 
       {/* Inverter Types Section */}
       <section className="py-16 bg-gray-50">
