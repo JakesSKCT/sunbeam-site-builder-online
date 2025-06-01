@@ -1,6 +1,7 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Zap, Battery, Home, Building2 } from "lucide-react";
+import { MapPin, Zap, Battery, Home, Building2, Sun } from "lucide-react";
 
 const Portfolio = () => {
   const projects = [
@@ -11,6 +12,7 @@ const Portfolio = () => {
       type: "Residential",
       image: "/lovable-uploads/9841e506-bd78-4495-9cbb-cf478380945c.png",
       systemSize: "24kW",
+      pvCapacity: "28kWp",
       batteryCapacity: "20kWh",
       description: "Complete solar solution with battery backup for a family home. Provides full energy independence during load shedding.",
       features: ["Tier 1 solar panels", "Hybrid inverter", "Lithium battery storage", "Smart monitoring"],
@@ -23,6 +25,7 @@ const Portfolio = () => {
       type: "Commercial",
       image: "/lovable-uploads/81dbedb3-8626-438a-af0b-3b1e2b77819d.png",
       systemSize: "20kW",
+      pvCapacity: "25kWp",
       batteryCapacity: "20kWh",
       description: "Large-scale solar installation for office complex, significantly reducing operational costs and carbon footprint.",
       features: ["Commercial-grade panels", "Three-phase inverters", "Grid-tie system", "Remote monitoring"],
@@ -35,6 +38,7 @@ const Portfolio = () => {
       type: "Agricultural",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
       systemSize: "20kW",
+      pvCapacity: "24kWp",
       batteryCapacity: "n/a",
       description: "Grid-Tied solution for remote farm property, powering irrigation systems and farm operations.",
       features: ["Grid-Tied inverters", "Generator backup", "Weather monitoring"],
@@ -47,6 +51,7 @@ const Portfolio = () => {
       type: "Commercial",
       image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop",
       systemSize: "30kW",
+      pvCapacity: "36kWp",
       batteryCapacity: "20kWh",
       description: "Compact solar solution for apartment complex, maximizing limited roof space for optimal energy generation.",
       features: ["High-efficiency panels", "Microinverters", "Compact battery", "App monitoring"],
@@ -59,6 +64,7 @@ const Portfolio = () => {
       type: "Industrial",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
       systemSize: "30kW",
+      pvCapacity: "35kWp",
       batteryCapacity: "20kWh",
       description: "Large industrial solar array for warehouse operations, providing significant cost savings and reliability.",
       features: ["Industrial panels", "Central inverters", "SCADA monitoring", "Grid integration"],
@@ -71,6 +77,7 @@ const Portfolio = () => {
       type: "Commercial",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop",
       systemSize: "30kW",
+      pvCapacity: "36kWp",
       batteryCapacity: "20kWh",
       description: "Premium solar installation with stunning ocean views, combining aesthetics with high performance.",
       features: ["Premium panels", "Hybrid inverter", "LiFePO4 batteries", "Smart home integration"],
@@ -145,7 +152,11 @@ const Portfolio = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex justify-between items-center text-sm">
+                <div className="grid grid-cols-3 gap-2 text-sm">
+                  <div className="flex items-center gap-1 text-orange-600">
+                    <Sun className="h-4 w-4" />
+                    <span className="font-medium">{project.pvCapacity}</span>
+                  </div>
                   <div className="flex items-center gap-1 text-blue-600">
                     <Zap className="h-4 w-4" />
                     <span className="font-medium">{project.systemSize}</span>
