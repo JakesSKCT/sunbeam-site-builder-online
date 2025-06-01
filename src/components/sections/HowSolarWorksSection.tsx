@@ -1,4 +1,6 @@
 
+import DayNightSolarDiagram from "@/components/DayNightSolarDiagram";
+
 const HowSolarWorksSection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -60,11 +62,7 @@ const HowSolarWorksSection = () => {
           </div>
           
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-2xl p-8 border border-blue-500/20">
-            <img 
-              src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" 
-              alt="Solar Energy System Diagram"
-              className="w-full h-auto rounded-2xl"
-            />
+            <DayNightSolarDiagram />
           </div>
         </div>
       </div>
