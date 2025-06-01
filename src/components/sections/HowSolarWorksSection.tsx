@@ -61,7 +61,7 @@ const HowSolarWorksSection = () => {
           
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl shadow-2xl p-8 border border-blue-500/20">
             <img 
-              src="/lovable-uploads/33b96118-cff3-4bf0-8672-470463a987bb.png" 
+              src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" 
               alt="Solar Energy System Diagram"
               className="w-full h-auto rounded-2xl"
             />
