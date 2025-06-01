@@ -1,6 +1,7 @@
 
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
+import FAQSection from "@/components/sections/FAQSection";
 import HowSolarWorksSection from "@/components/sections/HowSolarWorksSection";
 import CapeTownSolarAdvantages from "@/components/sections/CapeTownSolarAdvantages";
 import Portfolio from "@/components/Portfolio";
@@ -18,6 +19,7 @@ const Index = () => {
       <Navigation />
       
       <HeroSection />
+      <FAQSection />
       <HowSolarWorksSection />
       <CapeTownSolarAdvantages />
       <Portfolio />
