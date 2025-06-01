@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Zap, Battery, Home, Building2, Sun } from "lucide-react";
@@ -10,7 +9,7 @@ const Portfolio = () => {
       title: "Residential Solar Installation - Constantia",
       location: "Constantia, Cape Town",
       type: "Residential",
-      image: "/lovable-uploads/9841e506-bd78-4495-9cbb-cf478380945c.png",
+      image: "/lovable-uploads/28a6f8a2-c21b-4f95-a7a7-207fa47c04bb.png",
       systemSize: "24kW",
       pvCapacity: "28kWp",
       batteryCapacity: "20kWh",
