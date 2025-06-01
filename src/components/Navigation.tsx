@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -12,8 +11,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-blue-600">
-              C A Electrical
+            <Link to="/" className="flex items-center">
+              <img 
+                src="https://ca-electrical.co.za/wp-content/uploads/2023/11/CA-Electrical-Logo-removebg-preview.png" 
+                alt="CA Electrical Logo" 
+                className="h-10 w-auto"
+              />
             </Link>
           </div>
           
