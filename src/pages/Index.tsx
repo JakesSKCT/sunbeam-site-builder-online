@@ -14,7 +14,7 @@ import Footer from "@/components/sections/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gray-50">
       <Navigation />
       
       <HeroSection />
