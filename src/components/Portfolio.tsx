@@ -1,15 +1,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Zap, Battery, Home, Building2, Sun } from "lucide-react";
+import { MapPin, Zap, Battery, Home, Building2, Sun, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const Portfolio = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState<{[key: number]: number}>({});
+
   const projects = [
     {
       id: 1,
       title: "Residential Solar Installation - Constantia",
       location: "Constantia, Cape Town",
       type: "Residential",
-      image: "/lovable-uploads/28a6f8a2-c21b-4f95-a7a7-207fa47c04bb.png",
+      images: [
+        "/lovable-uploads/9841e506-bd78-4495-9cbb-cf478380945c.png",
+        "/lovable-uploads/28a6f8a2-c21b-4f95-a7a7-207fa47c04bb.png"
+      ],
       systemSize: "24kW",
       pvCapacity: "28kWp",
       batteryCapacity: "20kWh",
@@ -22,7 +28,7 @@ const Portfolio = () => {
       title: "Commercial Solar Array - West Coast College Citrusdal",
       location: "Citrusdal, Western Cape",
       type: "Commercial",
-      image: "/lovable-uploads/81dbedb3-8626-438a-af0b-3b1e2b77819d.png",
+      images: ["/lovable-uploads/81dbedb3-8626-438a-af0b-3b1e2b77819d.png"],
       systemSize: "20kW",
       pvCapacity: "25kWp",
       batteryCapacity: "20kWh",
@@ -35,7 +41,7 @@ const Portfolio = () => {
       title: "Grid-Tied System - Valota Farm",
       location: "Philippi, Cape Town",
       type: "Agricultural",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      images: ["https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop"],
       systemSize: "20kW",
       pvCapacity: "24kWp",
       batteryCapacity: "n/a",
@@ -48,7 +54,7 @@ const Portfolio = () => {
       title: "Rooftop Solar - Clanwilliam Firestation",
       location: "Clanwilliam, Western Cape",
       type: "Commercial",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop",
+      images: ["https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop"],
       systemSize: "30kW",
       pvCapacity: "36kWp",
       batteryCapacity: "20kWh",
@@ -61,7 +67,7 @@ const Portfolio = () => {
       title: "Rooftop Solar - Vredendal Firestation",
       location: "Vredendal, Western Cape",
       type: "Industrial",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
+      images: ["https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"],
       systemSize: "30kW",
       pvCapacity: "35kWp",
       batteryCapacity: "20kWh",
@@ -74,7 +80,7 @@ const Portfolio = () => {
       title: "Emcon - Lansdowne",
       location: "Lansdowne, Cape Town",
       type: "Commercial",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop",
+      images: ["https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"],
       systemSize: "30kW",
       pvCapacity: "36kWp",
       batteryCapacity: "20kWh",
@@ -104,6 +110,25 @@ const Portfolio = () => {
     }
   };
 
+  const getCurrentImage = (project: typeof projects[0]) => {
+    const index = currentImageIndex[project.id] || 0;
+    return project.images[index];
+  };
+
+  const nextImage = (projectId: number, totalImages: number) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) + 1) % totalImages
+    }));
+  };
+
+  const prevImage = (projectId: number, totalImages: number) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) - 1 + totalImages) % totalImages
+    }));
+  };
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,10 +146,41 @@ const Portfolio = () => {
             <Card key={project.id} className="hover:shadow-lg transition-shadow overflow-hidden">
               <div className="relative">
                 <img 
-                  src={project.image} 
+                  src={getCurrentImage(project)} 
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />
+                
+                {project.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={() => prevImage(project.id, project.images.length)}
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-1 rounded-full hover:bg-black/70 transition-colors"
+                    >
+                      <ChevronLeft className="h-4 w-4" />
+                    </button>
+                    <button
+                      onClick={() => nextImage(project.id, project.images.length)}
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-1 rounded-full hover:bg-black/70 transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4" />
+                    </button>
+                    
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-1">
+                      {project.images.map((_, index) => (
+                        <div
+                          key={index}
+                          className={`w-2 h-2 rounded-full ${
+                            index === (currentImageIndex[project.id] || 0) 
+                              ? 'bg-white' 
+                              : 'bg-white/50'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+                
                 <div className="absolute top-4 left-4">
                   <Badge className={`${getTypeBadgeColor(project.type)} flex items-center gap-1`}>
                     {getTypeIcon(project.type)}
