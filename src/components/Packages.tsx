@@ -18,14 +18,14 @@ const Packages = () => {
       monthlyGeneration: "650 kWh",
       description: "Perfect starter package for small to medium homes, covering essential appliances during load shedding.",
       features: [
-        "8 x 630W Tier 1 solar panels",
-        "5kW hybrid inverter",
-        "5kWh lithium battery",
+        "6 x 550W Tier 1 solar panels",
+        "5kW Hybrid inverter",
+        "5kWh Lithium battery",
         "Smart monitoring system",
-        "10-year installation warranty",
-        "25-year panel warranty",
+        "5 year warranty",
+        "20 year panel warranty",
         "Professional installation included",
-        "COC certification"
+        "SSEG Registration and COC certification"
       ],
       idealFor: "2-3 bedroom homes with moderate electricity usage",
       coverage: "Lights, TV, Wi-Fi, fridge, and small appliances",
