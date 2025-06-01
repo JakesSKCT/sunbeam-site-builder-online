@@ -70,7 +70,10 @@ const Portfolio = () => {
       title: "Rooftop Solar - Vredendal Firestation",
       location: "Vredendal, Western Cape",
       type: "Industrial",
-      images: ["https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"],
+      images: [
+        "/lovable-uploads/17957879-e94e-46ed-8a6a-5b80ff8418ae.png",
+        "/lovable-uploads/dea6f3c2-0054-4f42-bc0a-23a9fed93da2.png"
+      ],
       systemSize: "30kW",
       pvCapacity: "35kWp",
       batteryCapacity: "20kWh",
