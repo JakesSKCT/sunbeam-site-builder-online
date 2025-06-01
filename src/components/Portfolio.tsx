@@ -21,7 +21,7 @@ const Portfolio = () => {
       title: "Commercial Solar Array - Bellville Business Park",
       location: "Bellville, Cape Town",
       type: "Commercial",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/81dbedb3-8626-438a-af0b-3b1e2b77819d.png",
       systemSize: "50kW",
       batteryCapacity: "40kWh",
       description: "Large-scale solar installation for office complex, significantly reducing operational costs and carbon footprint.",
