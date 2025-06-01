@@ -1,15 +1,10 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, CloudSun } from "lucide-react";
-
 const CapeTownSolarAdvantages = () => {
-  return (
-    <section className="py-16 bg-white">
+  return <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Cape Town is Perfect for Solar
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Cape Town is Perfect for Solar</h2>
           <p className="text-xl text-gray-600">
             Cape Town's unique location and climate make it one of the world's best cities for solar energy
           </p>
@@ -83,8 +78,6 @@ const CapeTownSolarAdvantages = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CapeTownSolarAdvantages;
