@@ -1,9 +1,10 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import SolarFlowDiagram from "@/components/SolarFlowDiagram";
-import { Sun, Zap, Battery, Search, Award, Users } from "lucide-react";
+import { Sun, Zap, Battery, Search, Award, Users, TrendingUp, AlertTriangle, Shield } from "lucide-react";
 
 const Index = () => {
   return (
@@ -74,7 +75,7 @@ const Index = () => {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-lg font-semibold text-orange-600 mb-2">4. Grid Interaction</h3>
                 <p className="text-gray-600">
-                  The grid acts as backup when needed, and excess energy can be fed back (where permitted by local regulations).
+                  The Eskom grid acts as backup when needed, and excess energy can be fed back where permitted.
                 </p>
               </div>
             </div>
@@ -82,6 +83,167 @@ const Index = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <SolarFlowDiagram />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Inverter Types Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Inverter & Installation Types
+            </h2>
+            <p className="text-xl text-gray-600">
+              Choose the right inverter technology for your Cape Town property
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Zap className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>String Inverters</CardTitle>
+                <CardDescription>Cost-effective solution for most installations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Traditional and reliable, string inverters connect multiple solar panels in series. 
+                  Perfect for roofs with consistent sun exposure and minimal shading.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Most economical option</li>
+                  <li>• Easy maintenance</li>
+                  <li>• Proven technology</li>
+                  <li>• Ideal for unshaded roofs</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Sun className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Microinverters</CardTitle>
+                <CardDescription>Maximum efficiency for complex roof layouts</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Individual inverters for each panel optimize performance even with partial shading. 
+                  Ideal for Cape Town's varied roof orientations and shade conditions.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Panel-level optimization</li>
+                  <li>• Better shade tolerance</li>
+                  <li>• Enhanced monitoring</li>
+                  <li>• Flexible installation</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Battery className="h-12 w-12 text-blue-600 mb-4" />
+                <CardTitle>Hybrid Inverters</CardTitle>
+                <CardDescription>All-in-one solar and battery solution</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Combines solar and battery management in one unit. Essential for load shedding 
+                  protection and energy independence in Cape Town.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Battery-ready design</li>
+                  <li>• Load shedding backup</li>
+                  <li>• Smart energy management</li>
+                  <li>• Future expandable</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Electricity Costs & Load Shedding */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Cape Town's Energy Crisis
+            </h2>
+            <p className="text-xl text-gray-600">
+              Why solar is essential for Cape Town residents and businesses
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            
+            {/* Rising Electricity Costs */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <TrendingUp className="h-12 w-12 text-red-600 mb-4" />
+                <CardTitle className="text-2xl">Rising Electricity Costs</CardTitle>
+                <CardDescription>Eskom tariff increases are outpacing inflation</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-red-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-red-800 mb-2">Recent Eskom Increases:</h4>
+                  <ul className="text-sm text-red-700 space-y-1">
+                    <li>• 2024: 12.74% average increase</li>
+                    <li>• 2023: 18.65% average increase</li>
+                    <li>• 2022: 9.61% average increase</li>
+                    <li>• 5-year average: ~15% annually</li>
+                  </ul>
+                </div>
+                <p className="text-gray-600">
+                  With Eskom's annual tariff increases consistently exceeding inflation, 
+                  Cape Town households face mounting electricity costs. Solar provides 
+                  price certainty and long-term savings.
+                </p>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 mb-2">Solar Benefits:</h4>
+                  <p className="text-sm text-green-700">
+                    Lock in your electricity rate for 25+ years and protect 
+                    against future Eskom increases.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Load Shedding Impact */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <AlertTriangle className="h-12 w-12 text-orange-600 mb-4" />
+                <CardTitle className="text-2xl">Load Shedding Impact</CardTitle>
+                <CardDescription>The real cost of power outages in Cape Town</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-orange-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-800 mb-2">Business Impact:</h4>
+                  <ul className="text-sm text-orange-700 space-y-1">
+                    <li>• Lost productivity during outages</li>
+                    <li>• Equipment damage from power surges</li>
+                    <li>• Spoiled refrigerated goods</li>
+                    <li>• Customer dissatisfaction</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 mb-2">Household Challenges:</h4>
+                  <ul className="text-sm text-blue-700 space-y-1">
+                    <li>• No lighting or heating</li>
+                    <li>• Internet and communication disruption</li>
+                    <li>• Food spoilage and waste</li>
+                    <li>• Security system failures</li>
+                  </ul>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 mb-2">Solar Solution:</h4>
+                  <p className="text-sm text-green-700">
+                    Battery backup systems provide uninterrupted power during 
+                    load shedding, protecting your lifestyle and business.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -191,14 +353,14 @@ const Index = () => {
       <section className="py-16 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Go Solar?
+            Beat Load Shedding & Rising Costs
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Get a free consultation and quote for your solar installation project
+            Get a free consultation and quote to protect your Cape Town property from Eskom's challenges
           </p>
           <Link to="/contact">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Contact Us Today
+              Get Protected Today
             </Button>
           </Link>
         </div>

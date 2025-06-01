@@ -28,10 +28,16 @@ const SolarFlowDiagram = () => {
         </div>
       </div>
 
-      {/* Home Load */}
+      {/* House with Image */}
       <div className="absolute top-24 right-8">
         <div className="bg-purple-600 text-white p-4 rounded-lg shadow-lg flex items-center gap-2">
-          <Home className="h-6 w-6" />
+          <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
+            <img 
+              src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=32&h=32&fit=crop&crop=center" 
+              alt="House" 
+              className="w-6 h-6 object-cover rounded-sm"
+            />
+          </div>
           <span className="font-semibold">Home Load</span>
         </div>
       </div>
@@ -40,11 +46,11 @@ const SolarFlowDiagram = () => {
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <div className="bg-orange-600 text-white p-4 rounded-lg shadow-lg flex items-center gap-2">
           <Zap className="h-6 w-6" />
-          <span className="font-semibold">Grid Connection</span>
+          <span className="font-semibold">Eskom Grid</span>
         </div>
       </div>
 
-      {/* Energy Flow Lines */}
+      {/* Energy Flow Lines with Enhanced Animation */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
         {/* Solar to Battery flow */}
         <path
@@ -78,7 +84,7 @@ const SolarFlowDiagram = () => {
           style={{ animationDelay: '1s' }}
         />
         
-        {/* Grid connection flow */}
+        {/* Grid connection flow (bidirectional) */}
         <path
           d="M 200 220 L 200 190"
           stroke="#ea580c"
@@ -88,17 +94,30 @@ const SolarFlowDiagram = () => {
           className="animate-pulse"
           style={{ animationDelay: '1.5s' }}
         />
+        
+        {/* Energy flow particles */}
+        <circle r="3" fill="#fbbf24" className="animate-ping">
+          <animateMotion dur="3s" repeatCount="indefinite">
+            <path d="M 200 80 Q 150 120 120 140" />
+          </animateMotion>
+        </circle>
+        
+        <circle r="3" fill="#a855f7" className="animate-ping">
+          <animateMotion dur="3s" repeatCount="indefinite" begin="0.5s">
+            <path d="M 200 80 Q 250 120 280 140" />
+          </animateMotion>
+        </circle>
       </svg>
 
-      {/* Flow indicators */}
-      <div className="absolute top-32 left-32 text-sm text-green-600 font-medium animate-pulse">
+      {/* Flow indicators with enhanced styling */}
+      <div className="absolute top-32 left-32 text-sm text-green-600 font-medium animate-pulse bg-white px-2 py-1 rounded shadow-sm">
         Charging
       </div>
-      <div className="absolute top-32 right-32 text-sm text-purple-600 font-medium animate-pulse" style={{ animationDelay: '0.5s' }}>
+      <div className="absolute top-32 right-32 text-sm text-purple-600 font-medium animate-pulse bg-white px-2 py-1 rounded shadow-sm" style={{ animationDelay: '0.5s' }}>
         Powering
       </div>
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-sm text-orange-600 font-medium animate-pulse" style={{ animationDelay: '1.5s' }}>
-        Export/Import
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-sm text-orange-600 font-medium animate-pulse bg-white px-2 py-1 rounded shadow-sm" style={{ animationDelay: '1.5s' }}>
+        Grid Backup
       </div>
     </div>
   );
