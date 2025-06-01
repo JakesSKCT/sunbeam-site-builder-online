@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import SolarFlowDiagram from "@/components/SolarFlowDiagram";
+import Portfolio from "@/components/Portfolio";
 import { Sun, Zap, Battery, Search, Award, Users, TrendingUp, AlertTriangle, Shield, MapPin, CloudSun } from "lucide-react";
 
 const Index = () => {
@@ -167,6 +168,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Section */}
+      <Portfolio />
 
       {/* Inverter Types Section */}
       <section className="py-16 bg-gray-50">
