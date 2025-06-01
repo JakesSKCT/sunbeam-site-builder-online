@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -23,9 +24,9 @@ const Index = () => {
       <InverterTypesSection />
       <ElectricityCrisisSection />
       <CapeTownSolarAdvantages />
-      <Portfolio />
       <ServicesOverviewSection />
       <Packages />
+      <Portfolio />
       <WhyChooseUsSection />
       <CTASection />
       <Footer />
