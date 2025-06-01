@@ -12,9 +12,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <Link to="/" className="text-3xl font-bold">
-              <span className="text-blue-400">C A</span>
-              <span className="text-white ml-2">Electrical</span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/33b96118-cff3-4bf0-8672-470463a987bb.png" 
+                alt="C A Electrical Services" 
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
           
