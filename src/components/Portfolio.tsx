@@ -54,7 +54,10 @@ const Portfolio = () => {
       title: "Rooftop Solar - Clanwilliam Firestation",
       location: "Clanwilliam, Western Cape",
       type: "Commercial",
-      images: ["https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop"],
+      images: [
+        "/lovable-uploads/486b1c7c-5571-4bdc-a5db-e5726c8a9903.png",
+        "/lovable-uploads/340af66c-d27d-4a01-8a47-b35be5c77703.png"
+      ],
       systemSize: "30kW",
       pvCapacity: "36kWp",
       batteryCapacity: "20kWh",
