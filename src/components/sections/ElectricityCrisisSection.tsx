@@ -25,19 +25,26 @@ const ElectricityCrisisSection = () => {
               <CardDescription>Eskom tariff increases are outpacing inflation</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              <div className="bg-white p-4 rounded-lg border">
+                <img 
+                  src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" 
+                  alt="Graph showing Eskom tariff increases vs inflation from 2007-2022, with Eskom tariffs rising 653% compared to inflation's 129%"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
               <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-red-800 mb-2">Recent Eskom Increases:</h4>
+                <h4 className="font-semibold text-red-800 mb-2">Dramatic Cost Increases:</h4>
                 <ul className="text-sm text-red-700 space-y-1">
-                  <li>• 2024: 12.74% average increase</li>
-                  <li>• 2023: 18.65% average increase</li>
-                  <li>• 2022: 9.61% average increase</li>
-                  <li>• 5-year average: ~15% annually</li>
+                  <li>• 2007-2022: Eskom tariffs increased 653%</li>
+                  <li>• Same period: Inflation only increased 129%</li>
+                  <li>• Tariffs rising 5x faster than general inflation</li>
+                  <li>• Trend continues with double-digit annual increases</li>
                 </ul>
               </div>
               <p className="text-gray-600">
-                With Eskom's annual tariff increases consistently exceeding inflation, 
-                Cape Town households face mounting electricity costs. Solar provides 
-                price certainty and long-term savings.
+                As shown in the graph above, Eskom's tariff increases have dramatically 
+                outpaced inflation since the 2008 electricity crisis. This trend shows 
+                no signs of slowing, making solar an essential hedge against rising costs.
               </p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-green-800 mb-2">Solar Benefits:</h4>
