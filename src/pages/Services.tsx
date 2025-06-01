@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,11 @@ import {
   Building, 
   Wrench,
   CheckCircle,
-  Zap
+  Zap,
+  Shield,
+  Clock,
+  Award,
+  Users
 } from "lucide-react";
 
 const Services = () => {
