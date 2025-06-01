@@ -1,10 +1,7 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, AlertTriangle } from "lucide-react";
-
 const ElectricityCrisisSection = () => {
-  return (
-    <section className="py-16 bg-gray-100">
+  return <section className="py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -26,11 +23,7 @@ const ElectricityCrisisSection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="bg-white p-4 rounded-lg border">
-                <img 
-                  src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" 
-                  alt="Graph showing Eskom tariff increases vs inflation from 2007-2022, with Eskom tariffs rising 653% compared to inflation's 129%"
-                  className="w-full h-auto rounded-lg"
-                />
+                <img src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" alt="Graph showing Eskom tariff increases vs inflation from 2007-2022, with Eskom tariffs rising 653% compared to inflation's 129%" className="w-full h-auto rounded-lg" />
               </div>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-red-800 mb-2">Dramatic Cost Increases:</h4>
@@ -60,8 +53,8 @@ const ElectricityCrisisSection = () => {
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <AlertTriangle className="h-12 w-12 text-orange-600 mb-4" />
-              <CardTitle className="text-2xl">Load Shedding Impact</CardTitle>
-              <CardDescription>The real cost of power outages in Cape Town</CardDescription>
+              <CardTitle className="text-2xl">Energy independance</CardTitle>
+              <CardDescription>The real cost of loadshedding in Cape Town</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="bg-orange-50 p-4 rounded-lg">
@@ -93,8 +86,6 @@ const ElectricityCrisisSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ElectricityCrisisSection;
