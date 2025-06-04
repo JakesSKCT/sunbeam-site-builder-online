@@ -19,7 +19,7 @@ const InverterTypesSection = () => {
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <Zap className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle>String Inverters</CardTitle>
+              <CardTitle>String/Grid-Tied Inverters</CardTitle>
               <CardDescription>Cost-effective solution for most installations</CardDescription>
             </CardHeader>
             <CardContent>
