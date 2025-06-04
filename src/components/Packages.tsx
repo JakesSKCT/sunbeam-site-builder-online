@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -143,7 +142,7 @@ const Packages = () => {
                   <div className="text-center">
                     <Sun className="h-5 w-5 text-yellow-600 mx-auto mb-1" />
                     <p className="text-sm font-medium">{pkg.monthlyGeneration}</p>
-                    <p className="text-xs text-gray-500">Monthly Gen.</p>
+                    <p className="text-xs text-gray-500">Daily Gen.</p>
                   </div>
                 </div>
                 
