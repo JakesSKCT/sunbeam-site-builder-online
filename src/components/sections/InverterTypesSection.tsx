@@ -38,26 +38,6 @@ const InverterTypesSection = () => {
 
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
-              <Sun className="h-12 w-12 text-blue-600 mb-4" />
-              <CardTitle>Microinverters</CardTitle>
-              <CardDescription>Maximum efficiency for complex roof layouts</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 mb-4">
-                Individual inverters for each panel optimize performance even with partial shading. 
-                Ideal for Cape Town's varied roof orientations and shade conditions.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Panel-level optimization</li>
-                <li>• Better shade tolerance</li>
-                <li>• Enhanced monitoring</li>
-                <li>• Flexible installation</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardHeader>
               <Battery className="h-12 w-12 text-blue-600 mb-4" />
               <CardTitle>Hybrid Inverters</CardTitle>
               <CardDescription>All-in-one solar and battery solution</CardDescription>
@@ -92,6 +72,26 @@ const InverterTypesSection = () => {
                 <li>• Large battery storage</li>
                 <li>• Backup generator ready</li>
                 <li>• Remote monitoring</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <Sun className="h-12 w-12 text-blue-600 mb-4" />
+              <CardTitle>Microinverters</CardTitle>
+              <CardDescription>Maximum efficiency for complex roof layouts</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600 mb-4">
+                Individual inverters for each panel optimize performance even with partial shading. 
+                Ideal for Cape Town's varied roof orientations and shade conditions.
+              </p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Panel-level optimization</li>
+                <li>• Better shade tolerance</li>
+                <li>• Enhanced monitoring</li>
+                <li>• Flexible installation</li>
               </ul>
             </CardContent>
           </Card>
