@@ -27,8 +27,8 @@ const ElectricityCrisisSection = () => {
             <CardContent className="space-y-6">
               <div className="bg-black/50 p-6 rounded-xl border border-gray-700">
                 <img 
-                  src="/lovable-uploads/b8cfb0d2-feb3-45c5-a5d4-57ce24a3b21b.png" 
-                  alt="Graph showing Eskom tariff increases vs inflation from 2007-2022, with Eskom tariffs rising 653% compared to inflation's 129%" 
+                  src="/lovable-uploads/bbec21a2-ebb1-4e2c-bfd8-b0f9df810833.png" 
+                  alt="Graph showing Eskom tariff increases vs inflation from 1987-2023, with Eskom tariffs rising 653% compared to inflation's 129%" 
                   className="w-full h-auto rounded-lg" 
                 />
               </div>
