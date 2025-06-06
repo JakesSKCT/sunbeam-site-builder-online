@@ -1,3 +1,4 @@
+
 const HowSolarWorksSection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -60,8 +61,8 @@ const HowSolarWorksSection = () => {
           
           <div>
             <img 
-              src="/lovable-uploads/7fc2cdc1-b008-4e3d-95c2-c9d24b3b37c6.png" 
-              alt="Modern house with solar panels showing energy flow and electric vehicle charging"
+              src="/lovable-uploads/53960088-bae0-4286-a1e0-3bb6149a6a1c.png" 
+              alt="Modern house with solar panels showing energy flow diagram with labeled connections to solar, home, battery, and car"
               className="w-full h-auto rounded-xl"
             />
           </div>
