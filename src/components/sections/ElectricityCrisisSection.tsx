@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, AlertTriangle } from "lucide-react";
 
@@ -25,7 +24,7 @@ const ElectricityCrisisSection = () => {
               <CardDescription className="text-gray-400 text-lg">Eskom tariff increases are outpacing inflation dramatically</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="bg-black/50 p-6 rounded-xl border border-gray-700">
+              <div>
                 <img 
                   src="/lovable-uploads/bbec21a2-ebb1-4e2c-bfd8-b0f9df810833.png" 
                   alt="Graph showing Eskom tariff increases vs inflation from 1987-2023, with Eskom tariffs rising 653% compared to inflation's 129%" 
