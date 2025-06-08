@@ -1,4 +1,6 @@
 
+import SolarFlowDiagram from "../SolarFlowDiagram";
+
 const HowSolarWorksSection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -12,13 +14,9 @@ const HowSolarWorksSection = () => {
           </p>
         </div>
         
-        {/* Diagram moved above the blocks */}
+        {/* Animated diagram using the SolarFlowDiagram component */}
         <div className="mb-16 flex justify-center">
-          <img 
-            src="/lovable-uploads/cfcca9e5-c3f4-47e9-b5ce-0e50c829d410.png" 
-            alt="Modern house with solar panels showing animated energy flow with electric vehicle charging and grid connection"
-            className="w-full max-w-4xl h-auto rounded-xl"
-          />
+          <SolarFlowDiagram />
         </div>
         
         {/* 2x2 Grid Layout */}
