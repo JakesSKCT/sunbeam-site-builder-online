@@ -9,14 +9,14 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Have you ever felt frustrated by rising electricity bills?",
+      question: "Feeling frustrated by rising electricity bills?",
       answer: "With Eskom's annual tariff increases averaging 15% over the past 5 years, electricity costs are becoming unbearable. Solar energy locks in your electricity rate for 25+ years, protecting you from future price hikes.",
       icon: DollarSign,
       color: "text-red-600",
       bgColor: "bg-red-50"
     },
     {
-      question: "Does the risk of load shedding make you anxious?",
+      question: "Does the risk of load shedding give you anxiety?",
       answer: "Load shedding disrupts work, damages appliances, and affects your quality of life. Our solar systems with battery backup ensure uninterrupted power supply, giving you peace of mind during outages.",
       icon: Zap,
       color: "text-orange-600",
