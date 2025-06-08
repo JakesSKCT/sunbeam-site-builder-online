@@ -1,7 +1,9 @@
+
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import ServicesOverviewSection from "@/components/sections/ServicesOverviewSection";
 import { 
   Sun, 
   Battery, 
@@ -33,6 +35,9 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Solar Solutions Section */}
+      <ServicesOverviewSection />
 
       {/* Main Services */}
       <section className="py-16">

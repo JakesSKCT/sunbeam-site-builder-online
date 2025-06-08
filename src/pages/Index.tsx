@@ -8,7 +8,6 @@ import ElectricityCrisisSection from "@/components/sections/ElectricityCrisisSec
 import CapeTownSolarAdvantages from "@/components/sections/CapeTownSolarAdvantages";
 import Portfolio from "@/components/Portfolio";
 import Packages from "@/components/Packages";
-import ServicesOverviewSection from "@/components/sections/ServicesOverviewSection";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/sections/Footer";
@@ -24,7 +23,6 @@ const Index = () => {
       <InverterTypesSection />
       <ElectricityCrisisSection />
       <CapeTownSolarAdvantages />
-      <ServicesOverviewSection />
       <Packages />
       <Portfolio />
       <WhyChooseUsSection />
