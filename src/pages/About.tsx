@@ -1,5 +1,6 @@
 
 import Navigation from "@/components/Navigation";
+import Portfolio from "@/components/Portfolio";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Award, Users, Wrench } from "lucide-react";
 
@@ -94,6 +95,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Section */}
+      <Portfolio />
 
       {/* What Sets Us Apart */}
       <section className="py-16">
