@@ -8,29 +8,17 @@ const About = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About C A Electrical</h1>
-            <p className="text-xl max-w-3xl mx-auto">
-              Your trusted solar energy partner in Cape Town, South Africa
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Mission Statement */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-white shadow-lg">
+          <Card className="bg-gray-800 shadow-lg border-gray-700">
             <CardHeader>
-              <CardTitle className="text-2xl md:text-3xl text-center text-blue-600">
+              <CardTitle className="text-2xl md:text-3xl text-center text-blue-400">
                 Our Mission
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg text-gray-700 text-center leading-relaxed">
+              <p className="text-lg text-gray-300 text-center leading-relaxed">
                 At C A Electrical, we are committed to empowering Cape Town homes and businesses 
                 with sustainable, reliable solar energy solutions. We believe that every property 
                 deserves access to clean, affordable electricity that reduces environmental impact 
