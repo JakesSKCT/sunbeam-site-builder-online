@@ -11,25 +11,21 @@ const About = () => {
       <Navigation />
       
       {/* Mission Statement */}
-      <section className="py-16 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="bg-gray-800 shadow-lg border-gray-700">
-            <CardHeader>
-              <CardTitle className="text-2xl md:text-3xl text-center text-blue-400">
-                Our Mission
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-lg text-gray-300 text-center leading-relaxed">
-                At C A Electrical, we are committed to empowering Cape Town homes and businesses 
-                with sustainable, reliable solar energy solutions. We believe that every property 
-                deserves access to clean, affordable electricity that reduces environmental impact 
-                while providing energy independence. Through our expertise in solar installations, 
-                battery storage systems, and comprehensive energy audits, we help our clients 
-                achieve their energy goals while contributing to a greener South Africa.
-              </p>
-            </CardContent>
-          </Card>
+      <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+              Our Mission
+            </h2>
+            <p className="text-xl text-gray-300 max-w-5xl mx-auto leading-relaxed">
+              At C A Electrical, we are committed to empowering Cape Town homes and businesses 
+              with sustainable, reliable solar energy solutions. We believe that every property 
+              deserves access to clean, affordable electricity that reduces environmental impact 
+              while providing energy independence. Through our expertise in solar installations, 
+              battery storage systems, and comprehensive energy audits, we help our clients 
+              achieve their energy goals while contributing to a greener South Africa.
+            </p>
+          </div>
         </div>
       </section>
 
