@@ -210,11 +210,11 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-semibold">Address</h3>
-                      <p className="text-gray-600">Unit N7 Athlone Industrial Park
-                        10 Mymoena Crescent
-                        Athlone Industria 2
-                        Cape Town
-                        7764</p>
+                      <p className="text-gray-600">Unit N7 Athlone Industrial Park</p>
+                        <p className="text-gray-600">10 Mymoena Crescent</p>
+                        <p className="text-gray-600">Athlone Industria 2</p>
+                        <p className="text-gray-600">Cape Town</p>
+                       <p className="text-gray-600"> 7764</p>
                       <p className="text-sm text-gray-500">Serving the greater Cape Town area</p>
                     </div>
                   </div>
@@ -224,7 +224,6 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Business Hours</h3>
                       <p className="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Saturday: 8:00 AM - 1:00 PM</p>
                       <p className="text-sm text-gray-500">Emergency service available</p>
                     </div>
                   </div>
