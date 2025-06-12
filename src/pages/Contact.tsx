@@ -192,7 +192,7 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <p className="text-gray-600">+27 XX XXX XXXX</p>
+                      <p className="text-gray-600">+27 21 001 7720</p>
                       <p className="text-sm text-gray-500">Call for immediate assistance</p>
                     </div>
                   </div>
@@ -201,7 +201,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <p className="text-gray-600">info@caelectrical.co.za</p>
+                      <p className="text-gray-600">enquiries@caelectrical.co.za</p>
                       <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -209,8 +209,8 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
-                      <h3 className="font-semibold">Service Area</h3>
-                      <p className="text-gray-600">Cape Town, South Africa</p>
+                      <h3 className="font-semibold">Address</h3>
+                      <p className="text-gray-600">Unit N7 Athlone Industrial Park, 10 Mymoena Crescent, Athlone Industria 2, Cape Town, 7764</p>
                       <p className="text-sm text-gray-500">Serving the greater Cape Town area</p>
                     </div>
                   </div>
