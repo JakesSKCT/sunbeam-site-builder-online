@@ -210,7 +210,11 @@ const Contact = () => {
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-semibold">Address</h3>
-                      <p className="text-gray-600">Unit N7 Athlone Industrial Park, 10 Mymoena Crescent, Athlone Industria 2, Cape Town, 7764</p>
+                      <p className="text-gray-600">Unit N7 Athlone Industrial Park
+                        10 Mymoena Crescent
+                        Athlone Industria 2
+                        Cape Town
+                        7764</p>
                       <p className="text-sm text-gray-500">Serving the greater Cape Town area</p>
                     </div>
                   </div>
