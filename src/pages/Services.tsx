@@ -24,6 +24,9 @@ const Services = () => {
       {/* Our Solar Solutions Section (now includes detailed content) */}
       <ServicesOverviewSection />
 
+      {/* Packages Section */}
+      <Packages />
+
       {/* Residential vs Commercial */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,9 +99,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      {/* Packages Section */}
-      <Packages />
 
       {/* Additional Services */}
       <section className="py-16">
