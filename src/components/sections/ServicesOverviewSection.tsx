@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sun, Battery, Search } from "lucide-react";
+import { Sun, Battery, Search, CheckCircle } from "lucide-react";
 
 const ServicesOverviewSection = () => {
   return (
@@ -22,16 +22,35 @@ const ServicesOverviewSection = () => {
               <div className="mx-auto mb-6 p-4 bg-blue-500/20 rounded-2xl border border-blue-500/30 group-hover:bg-blue-500/30 transition-colors">
                 <Sun className="h-12 w-12 text-blue-400" />
               </div>
-              <CardTitle className="text-2xl text-white">Solar Installations</CardTitle>
+              <CardTitle className="text-2xl text-white">Solar Panel Installations</CardTitle>
               <CardDescription className="text-gray-400 text-lg">
-                Professional solar panel installations for homes and businesses
+                Professional solar panel systems for maximum energy generation
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-gray-300 leading-relaxed">
-                High-quality solar panels and inverters installed by certified professionals 
-                with comprehensive warranties you can trust for decades.
+                Our certified technicians install high-quality solar panels using premium 
+                components from trusted manufacturers. Every installation is designed to 
+                maximize energy production and withstand Cape Town's climate conditions.
               </p>
+              <div className="space-y-2">
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Tier 1 solar panels</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Premium inverters</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">25-year warranties</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Professional installation</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -40,16 +59,35 @@ const ServicesOverviewSection = () => {
               <div className="mx-auto mb-6 p-4 bg-green-500/20 rounded-2xl border border-green-500/30 group-hover:bg-green-500/30 transition-colors">
                 <Battery className="h-12 w-12 text-green-400" />
               </div>
-              <CardTitle className="text-2xl text-white">Battery Storage</CardTitle>
+              <CardTitle className="text-2xl text-white">Battery Storage Systems</CardTitle>
               <CardDescription className="text-gray-400 text-lg">
                 Store excess energy for use during load shedding and at night
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-gray-300 leading-relaxed">
-                Advanced battery systems that provide reliable backup power and maximize 
-                your solar investment with intelligent energy management.
+                Our battery storage solutions provide backup power during outages and 
+                allow you to use stored solar energy when the sun isn't shining. 
+                Perfect for load shedding protection and energy independence.
               </p>
+              <div className="space-y-2">
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Lithium-ion batteries</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Automatic backup switching</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Smart energy management</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">10+ year lifespan</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -60,14 +98,33 @@ const ServicesOverviewSection = () => {
               </div>
               <CardTitle className="text-2xl text-white">Energy Audits</CardTitle>
               <CardDescription className="text-gray-400 text-lg">
-                Comprehensive energy assessments to optimize your power usage
+                Comprehensive assessments to optimize your energy usage
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-4">
               <p className="text-gray-300 leading-relaxed">
-                Detailed analysis of your energy consumption patterns to design 
-                the most efficient and cost-effective solar solution.
+                Our detailed energy audits analyze your current electricity usage 
+                patterns to design the most efficient and cost-effective solar 
+                solution for your specific needs.
               </p>
+              <div className="space-y-2">
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Consumption analysis</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Solar potential assessment</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">ROI calculations</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
+                  <span className="text-sm text-gray-300">Custom recommendations</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>

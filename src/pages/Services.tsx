@@ -1,21 +1,17 @@
-
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServicesOverviewSection from "@/components/sections/ServicesOverviewSection";
 import { 
-  Sun, 
-  Battery, 
-  Search, 
   Home, 
   Building, 
   Wrench,
-  CheckCircle,
   Zap,
-  Shield,
-  Clock,
-  Award,
+  Battery,
+  Sun,
+  CheckCircle,
+  Search,
   Users
 } from "lucide-react";
 
@@ -36,124 +32,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Our Solar Solutions Section */}
+      {/* Our Solar Solutions Section (now includes detailed content) */}
       <ServicesOverviewSection />
-
-      {/* Main Services */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8">
-            
-            {/* Solar Installations */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Sun className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle className="text-2xl">Solar Panel Installations</CardTitle>
-                <CardDescription>
-                  Professional solar panel systems for maximum energy generation
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  Our certified technicians install high-quality solar panels using premium 
-                  components from trusted manufacturers. Every installation is designed to 
-                  maximize energy production and withstand Cape Town's climate conditions.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Tier 1 solar panels</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Premium inverters</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">25-year warranties</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Professional installation</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Battery Storage */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Battery className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle className="text-2xl">Battery Storage Systems</CardTitle>
-                <CardDescription>
-                  Store excess energy for use during load shedding and at night
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  Our battery storage solutions provide backup power during outages and 
-                  allow you to use stored solar energy when the sun isn't shining. 
-                  Perfect for load shedding protection and energy independence.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Lithium-ion batteries</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Automatic backup switching</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Smart energy management</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">10+ year lifespan</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Energy Audits */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <Search className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle className="text-2xl">Energy Audits</CardTitle>
-                <CardDescription>
-                  Comprehensive assessments to optimize your energy usage
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  Our detailed energy audits analyze your current electricity usage 
-                  patterns to design the most efficient and cost-effective solar 
-                  solution for your specific needs.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Consumption analysis</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Solar potential assessment</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">ROI calculations</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    <span className="text-sm">Custom recommendations</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Residential vs Commercial */}
       <section className="py-16 bg-white">
