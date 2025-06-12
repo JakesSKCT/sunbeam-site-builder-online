@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800 text-white py-12">
@@ -16,7 +15,6 @@ const Footer = () => {
           
           {/* Contact Information */}
           <div className="mb-8 space-y-3 text-gray-300">
-            <h3 className="text-xl font-semibold text-white mb-4">Contact Information</h3>
             <div className="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-3 md:space-y-0">
               <div className="flex items-center justify-center space-x-2">
                 <span className="text-blue-400">📞</span>
