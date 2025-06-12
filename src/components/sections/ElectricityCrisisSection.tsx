@@ -40,7 +40,7 @@ const ElectricityCrisisSection = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="text-red-400 mr-3">▶</span>
-                    Same period: Inflation only increased 129%
+                    Inflation only increased 129% during the same period
                   </li>
                   <li className="flex items-center">
                     <span className="text-red-400 mr-3">▶</span>
