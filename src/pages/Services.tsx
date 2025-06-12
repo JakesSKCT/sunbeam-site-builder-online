@@ -20,18 +20,6 @@ const Services = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl max-w-3xl mx-auto">
-              Comprehensive solar energy solutions for residential and commercial properties in Cape Town
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Our Solar Solutions Section (now includes detailed content) */}
       <ServicesOverviewSection />
 
