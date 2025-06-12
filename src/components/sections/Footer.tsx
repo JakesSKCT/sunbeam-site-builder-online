@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800 text-white py-12">
@@ -32,8 +33,6 @@ const Footer = () => {
           </div>
           
           <div className="flex justify-center space-x-8 mb-8 text-gray-400">
-            <span>Licensed & Certified</span>
-            <span>•</span>
             <span>25+ Year Warranties</span>
             <span>•</span>
             <span>Local Support</span>
