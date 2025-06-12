@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServicesOverviewSection from "@/components/sections/ServicesOverviewSection";
+import Packages from "@/components/Packages";
 import { 
   Home, 
   Building, 
@@ -95,6 +96,9 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Packages Section */}
+      <Packages />
 
       {/* Additional Services */}
       <section className="py-16">
