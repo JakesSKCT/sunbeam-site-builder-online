@@ -193,7 +193,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Phone</h3>
                       <p className="text-gray-600">+27 21 001 7720</p>
-                      <p className="text-sm text-gray-500">Call for immediate assistance</p>
+                      <p className="text-sm text-gray-500">Call us to discuss your needs</p>
                     </div>
                   </div>
                   
