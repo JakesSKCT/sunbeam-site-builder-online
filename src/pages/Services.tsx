@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,13 +29,13 @@ const Services = () => {
       <Packages />
 
       {/* Residential vs Commercial */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Residential & Commercial Solutions
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-300">
               Tailored solar solutions for every type of property
             </p>
           </div>
@@ -42,56 +43,56 @@ const Services = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             
             {/* Residential */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-700 border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
               <CardHeader>
-                <Home className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle className="text-2xl">Residential Solar</CardTitle>
-                <CardDescription>
+                <Home className="h-12 w-12 text-blue-400 mb-4" />
+                <CardTitle className="text-2xl text-white">Residential Solar</CardTitle>
+                <CardDescription className="text-gray-300">
                   Solar solutions designed for homes and residential properties
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Reduce your electricity bills and gain energy independence with 
                   our residential solar installations. Perfect for Cape Town homes 
                   looking to protect against load shedding and rising electricity costs.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <Zap className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                    <p className="text-sm font-medium">Grid-Tied Systems</p>
+                  <div className="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                    <Zap className="h-8 w-8 text-blue-400 mx-auto mb-2" />
+                    <p className="text-sm font-medium text-white">Grid-Tied Systems</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <Battery className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                    <p className="text-sm font-medium">Backup Solutions</p>
+                  <div className="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                    <Battery className="h-8 w-8 text-blue-400 mx-auto mb-2" />
+                    <p className="text-sm font-medium text-white">Backup Solutions</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Commercial */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="bg-gradient-to-br from-gray-800 to-gray-700 border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
               <CardHeader>
-                <Building className="h-12 w-12 text-blue-600 mb-4" />
-                <CardTitle className="text-2xl">Commercial Solar</CardTitle>
-                <CardDescription>
+                <Building className="h-12 w-12 text-blue-400 mb-4" />
+                <CardTitle className="text-2xl text-white">Commercial Solar</CardTitle>
+                <CardDescription className="text-gray-300">
                   Large-scale solar installations for businesses and commercial properties
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Reduce operational costs and demonstrate environmental responsibility 
                   with commercial solar installations. Ideal for offices, warehouses, 
                   retail spaces, and industrial facilities.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <Sun className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                    <p className="text-sm font-medium">Large Arrays</p>
+                  <div className="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                    <Sun className="h-8 w-8 text-blue-400 mx-auto mb-2" />
+                    <p className="text-sm font-medium text-white">Large Arrays</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
-                    <Wrench className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                    <p className="text-sm font-medium">Maintenance Plans</p>
+                  <div className="text-center p-4 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                    <Wrench className="h-8 w-8 text-blue-400 mx-auto mb-2" />
+                    <p className="text-sm font-medium text-white">Maintenance Plans</p>
                   </div>
                 </div>
               </CardContent>
