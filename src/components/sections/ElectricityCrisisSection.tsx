@@ -7,10 +7,10 @@ const ElectricityCrisisSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Cape Town's Energy Crisis
+            South Africa's Energy Crisis
           </h2>
           <p className="text-xl text-blue-300 max-w-3xl mx-auto">
-            Why solar is essential for Cape Town residents and businesses
+            Why solar is essential for residents and businesses
           </p>
         </div>
         
@@ -72,7 +72,7 @@ const ElectricityCrisisSection = () => {
             <CardHeader className="pb-6">
               <AlertTriangle className="h-16 w-16 text-orange-400 mb-6" />
               <CardTitle className="text-3xl text-white">Energy Independence</CardTitle>
-              <CardDescription className="text-gray-400 text-lg">The real cost of load shedding in Cape Town</CardDescription>
+              <CardDescription className="text-gray-400 text-lg">The real cost of load shedding</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 p-6 rounded-xl border border-orange-500/30">
