@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -132,7 +133,7 @@ const Packages = () => {
                   <div className="text-center">
                     <Zap className="h-5 w-5 text-blue-600 mx-auto mb-1" />
                     <p className="text-sm font-medium">{pkg.systemSize}</p>
-                    <p className="text-xs text-gray-500">System Size</p>
+                    <p className="text-xs text-gray-500">Inverter</p>
                   </div>
                   <div className="text-center">
                     <Battery className="h-5 w-5 text-green-600 mx-auto mb-1" />
@@ -142,7 +143,7 @@ const Packages = () => {
                   <div className="text-center">
                     <Sun className="h-5 w-5 text-yellow-600 mx-auto mb-1" />
                     <p className="text-sm font-medium">{pkg.monthlyGeneration}</p>
-                    <p className="text-xs text-gray-500">Daily Gen.</p>
+                    <p className="text-xs text-gray-500">Solar</p>
                   </div>
                 </div>
                 
