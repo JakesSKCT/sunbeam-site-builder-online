@@ -49,19 +49,19 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 text-justify">
                 CA Electrical is a Cape Town based electrical company owned by 3 dynamic individuals with a collective experience of 75+ years in the construction, electrical and solar industries. Established in 2016, the company has grown exponentially, now servicing clients in various industries including retail, commercial, industrial, education and healthcare.
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 text-justify">
                 At CA Electrical, we are dedicated to providing premium electrical services to all our clients. Our team of licensed and insured electricians is committed to delivering reliable, efficient, and safe electrical solutions. CA Electrical is registered with the Engineering Council of South Africa (ECSA) and the Department of Labour. Our members are ECA and ECB registered to ensure that your installation meets all the local regulatory requirements and safety standards. CA Electrical is registered with the Construction Industry Development Board with a 5EB grading.
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 text-justify">
                 Our Solar divison was founded with a vision to make solar energy accessible and affordable for every home and business in Cape Town. As licensed electrical contractors, we recognized the growing need for reliable renewable energy solutions, especially in light of South Africa's energy challenges.
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 text-justify">
                 Our team combines years of electrical expertise with specialized solar installation training, ensuring that every project meets the highest standards of safety and efficiency.
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We pride ourselves on being more than just installers – we're your long-term energy partners, providing ongoing support and maintenance to maximize your solar investment.
               </p>
             </div>
