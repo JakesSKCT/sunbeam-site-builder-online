@@ -4,6 +4,9 @@ import ProjectCard from "./portfolio/ProjectCard";
 import { projects } from "./portfolio/projectsData";
 
 const Portfolio = () => {
+  console.log("Portfolio component rendering");
+  console.log("Projects data:", projects);
+  
   const [currentImageIndex, setCurrentImageIndex] = useState<{[key: number]: number}>({});
 
   const nextImage = (projectId: number, totalImages: number) => {
@@ -33,15 +36,18 @@ const Portfolio = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              currentImageIndex={currentImageIndex[project.id] || 0}
-              onNextImage={() => nextImage(project.id, project.images.length)}
-              onPrevImage={() => prevImage(project.id, project.images.length)}
-            />
-          ))}
+          {projects.map((project) => {
+            console.log("Rendering project:", project.id, project.title);
+            return (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                currentImageIndex={currentImageIndex[project.id] || 0}
+                onNextImage={() => nextImage(project.id, project.images.length)}
+                onPrevImage={() => prevImage(project.id, project.images.length)}
+              />
+            );
+          })}
         </div>
         
         <div className="text-center mt-12">

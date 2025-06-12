@@ -13,6 +13,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, currentImageIndex, onNextImage, onPrevImage }: ProjectCardProps) => {
+  console.log("ProjectCard rendering for:", project.title);
+  
   const getCurrentImage = () => {
     return project.images[currentImageIndex];
   };
