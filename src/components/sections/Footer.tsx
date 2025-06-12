@@ -12,7 +12,27 @@ const Footer = () => {
             />
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mt-4 rounded-full"></div>
           </div>
-          <p className="text-blue-300 text-lg mb-6">Premium Solar Solutions for Cape Town</p>
+          <p className="text-blue-300 text-lg mb-8">Premium Solar Solutions for Cape Town</p>
+          
+          {/* Contact Information */}
+          <div className="mb-8 space-y-3 text-gray-300">
+            <h3 className="text-xl font-semibold text-white mb-4">Contact Information</h3>
+            <div className="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-3 md:space-y-0">
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-blue-400">📞</span>
+                <span>+27 21 001 7720</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <span className="text-blue-400">✉️</span>
+                <span>enquiries@caelectrical.co.za</span>
+              </div>
+            </div>
+            <div className="flex items-center justify-center space-x-2 mt-3">
+              <span className="text-blue-400">📍</span>
+              <span className="text-center">Unit N7 Athlone Industrial Park, 10 Mymoena Crescent, Athlone Industria 2, Cape Town, 7764</span>
+            </div>
+          </div>
+          
           <div className="flex justify-center space-x-8 mb-8 text-gray-400">
             <span>Licensed & Certified</span>
             <span>•</span>
