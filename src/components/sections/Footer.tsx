@@ -32,11 +32,6 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="flex justify-center space-x-8 mb-8 text-gray-400">
-            <span>25+ Year Warranties</span>
-            <span>•</span>
-            <span>Local Support</span>
-          </div>
           <p className="text-gray-500 text-sm">
             © 2024 C A Electrical. All rights reserved. Powering Cape Town's sustainable future.
           </p>
