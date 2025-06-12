@@ -1,187 +1,178 @@
 
 import React from 'react';
-import { Sun, Home, Battery, Zap, Activity } from 'lucide-react';
 
 const SolarFlowDiagram = () => {
   return (
-    <div className="relative w-full max-w-5xl mx-auto p-8 bg-gradient-to-b from-blue-100 to-green-50 rounded-xl">
-      {/* House Structure */}
-      <div className="relative">
-        {/* House Image with Roof */}
-        <div className="relative mx-auto w-80 h-60">
-          {/* House Base */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-64 h-40 bg-gradient-to-b from-orange-200 to-orange-300 rounded-lg shadow-lg border-2 border-orange-400">
-            {/* Windows */}
-            <div className="absolute top-4 left-4 w-8 h-8 bg-blue-200 border border-blue-400 rounded"></div>
-            <div className="absolute top-4 right-4 w-8 h-8 bg-blue-200 border border-blue-400 rounded"></div>
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-10 h-16 bg-yellow-600 border border-yellow-800 rounded-t-lg"></div>
-          </div>
+    <div className="w-full max-w-4xl mx-auto">
+      <svg
+        viewBox="0 0 800 400"
+        className="w-full h-auto"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        {/* Definitions for gradients and animations */}
+        <defs>
+          {/* Solar panel gradient */}
+          <linearGradient id="solarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#1e40af" />
+            <stop offset="100%" stopColor="#3b82f6" />
+          </linearGradient>
           
-          {/* Roof */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[140px] border-r-[140px] border-b-[60px] border-l-transparent border-r-transparent border-b-red-600"></div>
+          {/* House gradient */}
+          <linearGradient id="houseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#64748b" />
+            <stop offset="100%" stopColor="#475569" />
+          </linearGradient>
           
-          {/* Solar Panels on Roof */}
-          <div className="absolute top-2 left-1/2 transform -translate-x-1/2 flex gap-1">
-            <div className="w-16 h-8 bg-gradient-to-r from-blue-800 to-blue-900 border border-blue-700 rounded-sm shadow-md flex items-center justify-center">
-              <Sun className="h-4 w-4 text-yellow-400" />
-            </div>
-            <div className="w-16 h-8 bg-gradient-to-r from-blue-800 to-blue-900 border border-blue-700 rounded-sm shadow-md flex items-center justify-center">
-              <Sun className="h-4 w-4 text-yellow-400" />
-            </div>
-            <div className="w-16 h-8 bg-gradient-to-r from-blue-800 to-blue-900 border border-blue-700 rounded-sm shadow-md flex items-center justify-center">
-              <Sun className="h-4 w-4 text-yellow-400" />
-            </div>
-          </div>
+          {/* Battery gradient */}
+          <linearGradient id="batteryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#059669" />
+            <stop offset="100%" stopColor="#10b981" />
+          </linearGradient>
           
-          {/* Solar Panel Label */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-            Solar Panels
-          </div>
-        </div>
-
-        {/* Wall-mounted Inverter (Left side) */}
-        <div className="absolute top-32 left-8">
-          <div className="bg-gray-700 p-3 rounded-lg shadow-lg border-2 border-gray-600 w-16 h-12 flex items-center justify-center">
-            <Activity className="h-6 w-6 text-green-400" />
-          </div>
-          <div className="mt-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold text-center shadow-sm">
-            Inverter
-          </div>
-        </div>
-
-        {/* Wall-mounted Battery (Right side) */}
-        <div className="absolute top-32 right-8">
-          <div className="bg-green-700 p-3 rounded-lg shadow-lg border-2 border-green-600 w-16 h-16 flex items-center justify-center">
-            <Battery className="h-8 w-8 text-white" />
-          </div>
-          <div className="mt-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold text-center shadow-sm">
-            Battery
-          </div>
-        </div>
-
-        {/* Grid Connection (Outside) */}
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="bg-orange-600 p-3 rounded-lg shadow-lg border-2 border-orange-500 flex items-center gap-2">
-            <Zap className="h-6 w-6 text-white" />
-            <span className="text-white font-semibold text-sm">Eskom Grid</span>
-          </div>
-        </div>
-
-        {/* Home Load Indicator */}
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-          <div className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2">
-            <Home className="h-4 w-4" />
-            Home Load
-          </div>
-        </div>
-      </div>
-
-      {/* Animated Energy Flow Lines */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 500 400">
-        {/* Solar to Inverter flow */}
-        <path
-          d="M 200 80 Q 150 120 80 140"
-          stroke="#fbbf24"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="8,4"
-          className="animate-pulse"
-        />
+          {/* Energy flow animation */}
+          <circle id="energyDot" r="4" fill="#fbbf24">
+            <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+          </circle>
+        </defs>
         
-        {/* Solar to Battery flow (via inverter) */}
-        <path
-          d="M 300 80 Q 350 120 420 140"
-          stroke="#22c55e"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="8,4"
-          className="animate-pulse"
-          style={{ animationDelay: '0.5s' }}
-        />
+        {/* Sky background with day/night cycle */}
+        <rect width="800" height="200" fill="#3b82f6" opacity="0.1">
+          <animate attributeName="fill" values="#3b82f6;#1e1b4b;#3b82f6" dur="8s" repeatCount="indefinite" />
+        </rect>
         
-        {/* Inverter to Home flow */}
-        <path
-          d="M 120 160 Q 180 200 240 240"
-          stroke="#8b5cf6"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="8,4"
-          className="animate-pulse"
-          style={{ animationDelay: '1s' }}
-        />
+        {/* Sun */}
+        <circle cx="150" cy="80" r="30" fill="#fbbf24">
+          <animate attributeName="cy" values="80;120;80" dur="8s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0.3;1" dur="8s" repeatCount="indefinite" />
+        </circle>
         
-        {/* Battery to Home flow */}
-        <path
-          d="M 380 160 Q 320 200 260 240"
-          stroke="#3b82f6"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="8,4"
-          className="animate-pulse"
-          style={{ animationDelay: '1.5s' }}
-        />
+        {/* Sun rays */}
+        <g stroke="#fbbf24" strokeWidth="3" opacity="0.7">
+          <line x1="120" y1="50" x2="110" y2="40">
+            <animate attributeName="opacity" values="0.7;0.2;0.7" dur="8s" repeatCount="indefinite" />
+          </line>
+          <line x1="180" y1="50" x2="190" y2="40">
+            <animate attributeName="opacity" values="0.7;0.2;0.7" dur="8s" repeatCount="indefinite" />
+          </line>
+          <line x1="120" y1="110" x2="110" y2="120">
+            <animate attributeName="opacity" values="0.7;0.2;0.7" dur="8s" repeatCount="indefinite" />
+          </line>
+          <line x1="180" y1="110" x2="190" y2="120">
+            <animate attributeName="opacity" values="0.7;0.2;0.7" dur="8s" repeatCount="indefinite" />
+          </line>
+        </g>
         
-        {/* Home to Grid connection */}
-        <path
-          d="M 250 270 Q 250 300 250 330"
-          stroke="#ea580c"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="8,4"
-          className="animate-pulse"
-          style={{ animationDelay: '2s' }}
-        />
+        {/* Solar Panels */}
+        <rect x="50" y="150" width="200" height="80" fill="url(#solarGradient)" rx="5" />
+        <g stroke="#1e40af" strokeWidth="1" opacity="0.5">
+          <line x1="50" y1="170" x2="250" y2="170" />
+          <line x1="50" y1="190" x2="250" y2="190" />
+          <line x1="50" y1="210" x2="250" y2="210" />
+          <line x1="100" y1="150" x2="100" y2="230" />
+          <line x1="150" y1="150" x2="150" y2="230" />
+          <line x1="200" y1="150" x2="200" y2="230" />
+        </g>
         
-        {/* Energy flow particles */}
-        <circle r="4" fill="#fbbf24" className="opacity-80">
+        {/* House */}
+        <rect x="350" y="200" width="150" height="100" fill="url(#houseGradient)" rx="5" />
+        {/* Roof */}
+        <polygon points="340,200 425,150 510,200" fill="#64748b" />
+        {/* Door */}
+        <rect x="380" y="250" width="30" height="50" fill="#374151" />
+        {/* Windows */}
+        <rect x="420" y="220" width="25" height="25" fill="#fbbf24" opacity="0.8">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="8s" repeatCount="indefinite" />
+        </rect>
+        <rect x="450" y="220" width="25" height="25" fill="#fbbf24" opacity="0.8">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="8s" repeatCount="indefinite" />
+        </rect>
+        
+        {/* Battery */}
+        <rect x="550" y="220" width="80" height="60" fill="url(#batteryGradient)" rx="5" />
+        <rect x="630" y="235" width="8" height="30" fill="#10b981" rx="2" />
+        {/* Battery charge indicator */}
+        <rect x="560" y="235" width="50" height="20" fill="#34d399" opacity="0.8">
+          <animate attributeName="width" values="10;50;10" dur="6s" repeatCount="indefinite" />
+        </rect>
+        
+        {/* Grid Connection */}
+        <rect x="650" y="150" width="100" height="80" fill="#6b7280" rx="5" />
+        <g stroke="#374151" strokeWidth="2">
+          <line x1="670" y1="170" x2="730" y2="170" />
+          <line x1="670" y1="190" x2="730" y2="190" />
+          <line x1="670" y1="210" x2="730" y2="210" />
+        </g>
+        
+        {/* Energy Flow Lines */}
+        <g stroke="#10b981" strokeWidth="3" fill="none" opacity="0.8">
+          {/* Solar to House */}
+          <path d="M 250 190 Q 300 190 350 220">
+            <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="3s" repeatCount="indefinite" />
+          </path>
+          
+          {/* Solar to Battery */}
+          <path d="M 200 230 Q 400 280 550 250">
+            <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="3s" repeatCount="indefinite" begin="0.5s" />
+          </path>
+          
+          {/* House to Grid */}
+          <path d="M 500 210 Q 575 180 650 190">
+            <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="3s" repeatCount="indefinite" begin="1s" />
+          </path>
+          
+          {/* Battery to House (night mode) */}
+          <path d="M 550 240 Q 450 260 400 240" opacity="0.5">
+            <animate attributeName="opacity" values="0.1;0.8;0.1" dur="8s" repeatCount="indefinite" begin="4s" />
+            <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="3s" repeatCount="indefinite" begin="1.5s" />
+          </path>
+        </g>
+        
+        {/* Energy dots moving along paths */}
+        <circle r="4" fill="#fbbf24">
           <animateMotion dur="3s" repeatCount="indefinite">
-            <path d="M 200 80 Q 150 120 80 140" />
+            <path d="M 250 190 Q 300 190 350 220" />
           </animateMotion>
+          <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
         </circle>
         
-        <circle r="4" fill="#22c55e" className="opacity-80">
+        <circle r="4" fill="#10b981">
           <animateMotion dur="3s" repeatCount="indefinite" begin="0.5s">
-            <path d="M 300 80 Q 350 120 420 140" />
+            <path d="M 200 230 Q 400 280 550 250" />
           </animateMotion>
+          <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="0.5s" />
         </circle>
         
-        <circle r="4" fill="#8b5cf6" className="opacity-80">
+        <circle r="4" fill="#3b82f6">
           <animateMotion dur="3s" repeatCount="indefinite" begin="1s">
-            <path d="M 120 160 Q 180 200 240 240" />
+            <path d="M 500 210 Q 575 180 650 190" />
           </animateMotion>
+          <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="1s" />
         </circle>
         
-        <circle r="4" fill="#3b82f6" className="opacity-80">
-          <animateMotion dur="3s" repeatCount="indefinite" begin="1.5s">
-            <path d="M 380 160 Q 320 200 260 240" />
-          </animateMotion>
-        </circle>
+        {/* Labels */}
+        <text x="150" y="250" textAnchor="middle" className="fill-white text-sm font-semibold">
+          Solar Panels
+        </text>
+        <text x="425" y="320" textAnchor="middle" className="fill-white text-sm font-semibold">
+          Home
+        </text>
+        <text x="590" y="300" textAnchor="middle" className="fill-white text-sm font-semibold">
+          Battery
+        </text>
+        <text x="700" y="250" textAnchor="middle" className="fill-white text-sm font-semibold">
+          Grid
+        </text>
+        
+        {/* Day/Night indicator */}
+        <text x="400" y="50" textAnchor="middle" className="fill-white text-lg font-bold">
+          <animate attributeName="opacity" values="1;0;1" dur="8s" repeatCount="indefinite" />
+          Day Mode
+        </text>
+        <text x="400" y="50" textAnchor="middle" className="fill-blue-300 text-lg font-bold" opacity="0">
+          <animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite" begin="4s" />
+          Night Mode
+        </text>
       </svg>
-
-      {/* Energy Flow Labels */}
-      <div className="absolute top-24 left-20 text-xs text-yellow-700 font-medium animate-pulse bg-yellow-50 px-2 py-1 rounded shadow-sm border border-yellow-200">
-        DC Power
-      </div>
-      <div className="absolute top-24 right-20 text-xs text-green-700 font-medium animate-pulse bg-green-50 px-2 py-1 rounded shadow-sm border border-green-200" style={{ animationDelay: '0.5s' }}>
-        Charging
-      </div>
-      <div className="absolute bottom-32 left-16 text-xs text-purple-700 font-medium animate-pulse bg-purple-50 px-2 py-1 rounded shadow-sm border border-purple-200" style={{ animationDelay: '1s' }}>
-        AC Power
-      </div>
-      <div className="absolute bottom-32 right-16 text-xs text-blue-700 font-medium animate-pulse bg-blue-50 px-2 py-1 rounded shadow-sm border border-blue-200" style={{ animationDelay: '1.5s' }}>
-        Backup
-      </div>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-xs text-orange-700 font-medium animate-pulse bg-orange-50 px-2 py-1 rounded shadow-sm border border-orange-200" style={{ animationDelay: '2s' }}>
-        Grid Tie
-      </div>
-
-      {/* Power Generation Indicator */}
-      <div className="absolute top-4 right-4 bg-white p-2 rounded-lg shadow-lg border">
-        <div className="flex items-center gap-2 text-sm">
-          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-          <span className="text-gray-700 font-medium">Generating Power</span>
-        </div>
-      </div>
     </div>
   );
 };
