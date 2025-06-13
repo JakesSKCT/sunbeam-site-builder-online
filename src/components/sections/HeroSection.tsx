@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/contact">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-xl shadow-blue-600/25 border border-blue-500">
-                Get Free Assessment
+                Free Assessment
               </Button>
             </Link>
             <Link to="/services">
