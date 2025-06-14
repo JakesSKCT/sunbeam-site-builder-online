@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const HowSolarWorksSection = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -9,13 +9,13 @@ const HowSolarWorksSection = () => {
     "https://i.imgur.com/6wCojrG.mp4"
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
-    }, 5000);
+  const handleDayClick = () => {
+    setCurrentVideoIndex(0);
+  };
 
-    return () => clearInterval(interval);
-  }, [videos.length]);
+  const handleNightClick = () => {
+    setCurrentVideoIndex(1);
+  };
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -29,8 +29,8 @@ const HowSolarWorksSection = () => {
           </p>
         </div>
         
-        {/* Diagram moved above the blocks */}
-        <div className="mb-16 flex justify-center">
+        {/* Video display */}
+        <div className="mb-8 flex justify-center">
           <a href={videos[currentVideoIndex]} target="_blank" rel="noopener noreferrer">
             <video 
               key={videos[currentVideoIndex]}
@@ -43,6 +43,30 @@ const HowSolarWorksSection = () => {
               playsInline
             />
           </a>
+        </div>
+
+        {/* Day/Night toggle buttons */}
+        <div className="flex justify-center mb-16 space-x-8">
+          <button
+            onClick={handleDayClick}
+            className={`px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-200 ${
+              currentVideoIndex === 0
+                ? "bg-yellow-500 text-black shadow-lg shadow-yellow-500/25"
+                : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+            }`}
+          >
+            ☀️ Day
+          </button>
+          <button
+            onClick={handleNightClick}
+            className={`px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-200 ${
+              currentVideoIndex === 1
+                ? "bg-blue-500 text-white shadow-lg shadow-blue-500/25"
+                : "bg-gray-700 text-gray-300 hover:bg-gray-600"
+            }`}
+          >
+            🌙 Night
+          </button>
         </div>
         
         {/* 2x2 Grid Layout */}
