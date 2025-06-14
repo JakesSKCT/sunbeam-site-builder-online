@@ -66,6 +66,16 @@ const Navigation = () => {
                 Services
               </Link>
               <Link
+                to="/promotions"
+                className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
+                  isActive("/promotions") 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
+                    : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
+                }`}
+              >
+                Promotions
+              </Link>
+              <Link
                 to="/contact"
                 className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
                   isActive("/contact") 
@@ -136,6 +146,17 @@ const Navigation = () => {
                 }`}
               >
                 Services
+              </Link>
+              <Link
+                to="/promotions"
+                onClick={closeMobileMenu}
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                  isActive("/promotions") 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
+                    : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
+                }`}
+              >
+                Promotions
               </Link>
               <Link
                 to="/contact"
