@@ -1,5 +1,22 @@
 
+import { useState, useEffect } from "react";
+
 const HowSolarWorksSection = () => {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  
+  const videos = [
+    "https://i.imgur.com/64OwLGo.mp4",
+    "https://i.imgur.com/6wCojrG.mp4"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [videos.length]);
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,10 +31,10 @@ const HowSolarWorksSection = () => {
         
         {/* Diagram moved above the blocks */}
         <div className="mb-16 flex justify-center">
-          <a href="https://i.imgur.com/64OwLGo.mp4" target="_blank" rel="noopener noreferrer">
+          <a href={videos[currentVideoIndex]} target="_blank" rel="noopener noreferrer">
             <video 
-              src="https://i.imgur.com/64OwLGo.mp4" 
-              alt="Modern house with solar panels showing animated energy flow with electric vehicle charging and grid connection"
+              key={videos[currentVideoIndex]}
+              src={videos[currentVideoIndex]} 
               title="source: imgur.com"
               className="w-full max-w-4xl h-auto rounded-xl"
               autoPlay
