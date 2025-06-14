@@ -14,9 +14,9 @@ const HowSolarWorksSection = () => {
         
         {/* Diagram moved above the blocks */}
         <div className="mb-16 flex justify-center">
-          <a href="https://imgur.com/YUPkPdJ" target="_blank" rel="noopener noreferrer">
+          <a href="https://imgur.com/a/32EqjZI" target="_blank" rel="noopener noreferrer">
             <img 
-              src="https://i.imgur.com/YUPkPdJ.gif" 
+              src="https://i.imgur.com/32EqjZI.png" 
               alt="Modern house with solar panels showing animated energy flow with electric vehicle charging and grid connection"
               title="source: imgur.com"
               className="w-full max-w-4xl h-auto rounded-xl"
