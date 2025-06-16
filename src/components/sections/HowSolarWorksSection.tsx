@@ -1,12 +1,11 @@
-
 import { useState } from "react";
 
 const HowSolarWorksSection = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   
   const videos = [
-    "https://imgur.com/NqOXl3U/day-3.mp4",
-    "https://imgur.com/a/KtNt3OZ.light.mp4"
+    "https://imgur.com/a/KtNt3OZ.mp4",
+    "https://imgur.com/a/IlOAAzl.mp4"
   ];
 
   const handleDayClick = () => {
