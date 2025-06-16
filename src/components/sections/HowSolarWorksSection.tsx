@@ -30,13 +30,13 @@ const HowSolarWorksSection = () => {
         </div>
         
         {/* Video display */}
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8">
           <a href={videos[currentVideoIndex]} target="_blank" rel="noopener noreferrer">
             <video 
               key={videos[currentVideoIndex]}
               src={videos[currentVideoIndex]} 
               title="source: imgur.com"
-              className="w-full max-w-4xl h-auto rounded-xl"
+              className="w-full h-auto rounded-xl"
               autoPlay
               loop
               muted
