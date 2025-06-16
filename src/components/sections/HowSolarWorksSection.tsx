@@ -6,7 +6,7 @@ const HowSolarWorksSection = () => {
   
   const videos = [
     "https://imgur.com/NqOXl3U/day-3.mp4",
-    "https://i.imgur.com/6wCojrG.mp4"
+    "https://imgur.com/a/KtNt3OZ.light.mp4"
   ];
 
   const handleDayClick = () => {
