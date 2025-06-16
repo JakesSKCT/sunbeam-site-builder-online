@@ -4,29 +4,17 @@ import { useState } from "react";
 const HowSolarWorksSection = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   
-  // Try direct Imgur video URLs - these might work better
   const videos = [
-    "https://i.imgur.com/KtNt3OZ.mp4",
-    "https://i.imgur.com/IlOAAzl.mp4"
+    "https://i.imgur.com/64OwLGo.mp4",
+    "https://i.imgur.com/6wCojrG.mp4"
   ];
 
   const handleDayClick = () => {
-    console.log("Day button clicked");
     setCurrentVideoIndex(0);
   };
 
   const handleNightClick = () => {
-    console.log("Night button clicked");
     setCurrentVideoIndex(1);
-  };
-
-  const handleVideoError = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
-    console.error("Video failed to load:", videos[currentVideoIndex]);
-    console.error("Error details:", e);
-  };
-
-  const handleVideoLoad = () => {
-    console.log("Video loaded successfully:", videos[currentVideoIndex]);
   };
 
   return (
@@ -41,25 +29,20 @@ const HowSolarWorksSection = () => {
           </p>
         </div>
         
-        {/* Video display with debugging */}
+        {/* Video display */}
         <div className="mb-8 flex justify-center">
-          <div className="w-full max-w-4xl">
-            <p className="text-white mb-4 text-center">
-              Current video: {videos[currentVideoIndex]}
-            </p>
+          <a href={videos[currentVideoIndex]} target="_blank" rel="noopener noreferrer">
             <video 
               key={videos[currentVideoIndex]}
               src={videos[currentVideoIndex]} 
-              className="w-full h-auto rounded-xl border-2 border-blue-500"
+              title="source: imgur.com"
+              className="w-full max-w-4xl h-auto rounded-xl"
               autoPlay
               loop
               muted
               playsInline
-              controls
-              onError={handleVideoError}
-              onLoadedData={handleVideoLoad}
             />
-          </div>
+          </a>
         </div>
 
         {/* Day/Night toggle buttons */}
