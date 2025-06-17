@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +5,10 @@ import { Check, Sun, Battery, Zap, Home, Building2, Factory } from "lucide-react
 import { Link } from "react-router-dom";
 
 const Packages = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const packages = [
     {
       id: 1,
@@ -172,7 +175,7 @@ const Packages = () => {
                   </div>
                 </div>
                 
-                <Link to="/contact" className="block">
+                <Link to="/contact" onClick={scrollToTop} className="block">
                   <Button 
                     className={`w-full ${pkg.popular ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700'}`}
                     size="lg"
@@ -194,7 +197,7 @@ const Packages = () => {
               Need something different? We design custom solar solutions tailored to your specific energy needs, 
               roof layout, and budget. All packages include professional installation, warranties, and ongoing support.
             </p>
-            <Link to="/contact">
+            <Link to="/contact" onClick={scrollToTop}>
               <Button variant="outline" className="border-yellow-600 text-yellow-700 hover:bg-yellow-100">
                 Request Custom Quote
               </Button>

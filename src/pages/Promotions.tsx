@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import { Button } from "@/components/ui/button";
@@ -61,6 +60,10 @@ const Promotions = () => {
       financing: "Finance available"
     }
   ];
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900">
@@ -134,7 +137,7 @@ const Promotions = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <Link to="/contact">
+                    <Link to="/contact" onClick={scrollToTop}>
                       <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold">
                         Get This Package
                       </Button>
@@ -198,14 +201,14 @@ const Promotions = () => {
             Contact us today to discuss which promotional package is right for your home or business.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/contact">
+            <Link to="/contact" onClick={scrollToTop}>
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold">
                 Get Your Quote
               </Button>
             </Link>
-            <a href="tel:0813211094">
+            <a href="https://wa.me/27813211094" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-4 text-lg font-semibold">
-                Call Now: 081 321 1094
+                WhatsApp: 081 321 1094
               </Button>
             </a>
           </div>

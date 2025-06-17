@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="relative bg-gradient-to-br from-black via-gray-900 to-blue-900 py-20 overflow-hidden">
       {/* Background Pattern */}
@@ -26,12 +30,12 @@ const CTASection = () => {
           property from Eskom's ongoing challenges and secure your energy future.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <Link to="/contact">
+          <Link to="/contact" onClick={scrollToTop}>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-xl shadow-blue-600/25 border border-blue-500">
               Get Protected Today
             </Button>
           </Link>
-          <Link to="/services">
+          <Link to="/services" onClick={scrollToTop}>
             <Button size="lg" variant="outline" className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black px-8 py-4 text-lg font-semibold">
               View Our Solutions
             </Button>
