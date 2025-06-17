@@ -29,7 +29,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
               <img 
-                src="/lovable-uploads/33b96118-cff3-4bf0-8672-470463a987bb.png" 
+                src="/lovable-uploads/9646ac87-2641-4661-82ae-a9af61a5184b.png" 
                 alt="C A Electrical Services" 
                 className="h-12 w-auto"
               />

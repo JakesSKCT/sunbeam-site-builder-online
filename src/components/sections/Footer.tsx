@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="mb-6">
             <img 
-              src="/lovable-uploads/33b96118-cff3-4bf0-8672-470463a987bb.png" 
+              src="/lovable-uploads/9646ac87-2641-4661-82ae-a9af61a5184b.png" 
               alt="C A Electrical Services" 
               className="h-16 w-auto mx-auto mb-4"
             />
