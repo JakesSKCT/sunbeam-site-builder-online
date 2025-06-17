@@ -17,6 +17,10 @@ const Navigation = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   
   return (
     <nav className="bg-black/95 backdrop-blur-sm border-b border-blue-900/50 shadow-lg sticky top-0 z-50">
@@ -90,7 +94,7 @@ const Navigation = () => {
           
           {/* Desktop Get Quote Button */}
           <div className="hidden md:block">
-            <Link to="/contact">
+            <Link to="/contact" onClick={scrollToTop}>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
                 Get Quote
               </Button>
@@ -170,7 +174,7 @@ const Navigation = () => {
                 Contact
               </Link>
               <div className="pt-4">
-                <Link to="/contact" onClick={closeMobileMenu}>
+                <Link to="/contact" onClick={() => { closeMobileMenu(); scrollToTop(); }}>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
                     Get Quote
                   </Button>

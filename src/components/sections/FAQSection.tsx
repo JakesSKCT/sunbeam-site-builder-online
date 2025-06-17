@@ -1,11 +1,15 @@
-
 import { useState } from "react";
 import { ChevronDown, ChevronUp, Zap, Shield, Leaf, DollarSign } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const FAQSection = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const faqs = [
     {
@@ -104,9 +108,11 @@ const FAQSection = () => {
             <p className="text-xl text-gray-700 mb-6">
               <strong>Solar Energy</strong> solves all these problems while saving you money and protecting the environment.
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              Discover Solar Solutions
-            </Button>
+            <Link to="/services" onClick={scrollToTop}>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                Discover Solar Solutions
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
