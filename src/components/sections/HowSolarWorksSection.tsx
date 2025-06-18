@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 const HowSolarWorksSection = () => {
@@ -5,7 +6,7 @@ const HowSolarWorksSection = () => {
   
   const videos = [
     "http://i.imgur.com/tdml0tl.mp4",
-    "https://i.imgur.com/Qy70Mfs.mp4"
+    "http://i.imgur.com/Qy70Mfs.mp4"
   ];
 
   const handleDayClick = () => {
