@@ -5,8 +5,8 @@ const HowSolarWorksSection = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   
   const videos = [
-    "http://i.imgur.com/tdml0tl.mp4",
-    "http://i.imgur.com/Qy70Mfs.mp4"
+    "https://i.imgur.com/tdml0tl.mp4",
+    "https://i.imgur.com/Qy70Mfs.mp4"
   ];
 
   const handleDayClick = () => {
