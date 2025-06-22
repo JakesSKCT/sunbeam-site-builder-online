@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Promotions from "./pages/Promotions";
+import ElectricalServices from "./pages/ElectricalServices";
 import OpenGraphImagePage from "./pages/OpenGraphImagePage";
 import NotFound from "./pages/NotFound";
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/electrical-services" element={<ElectricalServices />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/promotions" element={<Promotions />} />
           <Route path="/og-image" element={<OpenGraphImagePage />} />
