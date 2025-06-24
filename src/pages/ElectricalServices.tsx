@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -72,8 +73,8 @@ const ElectricalServices = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section - Dark Background with New Electrical Image */}
-      <section className="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900">
+      {/* Hero Section - Dark Background with New Electrical Image - Much Larger */}
+      <section className="relative pt-20 pb-80 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900 min-h-screen">
         {/* Background Image - Your uploaded electrical image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -92,7 +93,7 @@ const ElectricalServices = () => {
           <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-500 rounded-full blur-xl"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex items-center justify-center min-h-screen">
           <div className="text-center">
             <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto">
               Electrical subcontractors for high-end commercial, industrial and solar projects.
