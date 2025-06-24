@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -73,13 +72,13 @@ const ElectricalServices = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section - Dark Background with Colorful Electrical Image */}
+      {/* Hero Section - Dark Background with New Electrical Image */}
       <section className="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900">
-        {/* Background Image - More colorful electrical image */}
+        {/* Background Image - Your uploaded electrical image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=6000&q=80)',
+            backgroundImage: 'url(/lovable-uploads/d580108c-2212-41c0-b9b8-652f407937c7.png)',
           }}
         >
           {/* Dark overlay for better text readability */}
