@@ -126,13 +126,13 @@ const ElectricalServices = () => {
                 Welcome to <span className="text-gradient">CA Electrical</span>
               </h2>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
-                <p>
+                <p className="text-justify">
                   CA Electrical is a Cape Town based electrical company owned by 3 dynamic individuals with a collective experience of 75+ years in the construction, electrical and solar industries. Established in 2016, the company has grown exponentially, now servicing clients in various industries including retail, commercial, industrial, education and healthcare.
                 </p>
-                <p>
+                <p className="text-justify">
                   At CA Electrical, we are dedicated to providing premium electrical services to all our clients. Our team of licensed and insured electricians is committed to delivering reliable, efficient, and safe electrical solutions.
                 </p>
-                <p>
+                <p className="text-justify">
                   CA Electrical is registered with the Engineering Council of South Africa (ECSA) and the Department of Labour. Our members are ECA and ECB registered to ensure that your installation meets all the local regulatory requirements and safety standards. CA Electrical is registered with the Construction Industry Development Board with a 5EB grading.
                 </p>
               </div>
@@ -182,62 +182,89 @@ const ElectricalServices = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Commercial Services */}
-            <Card className="glass-effect border-blue-900/50">
-              <CardHeader>
-                <CardTitle className="text-white text-xl">Commercial Electrical Services</CardTitle>
-                <CardDescription className="text-gray-300">
-                  We offer a complete design and implementation of commercial electrical installations, at all times adhering to current SANS regulations and safety practices.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {commercialServices.map((service, index) => (
-                    <li key={index} className="text-gray-300 flex items-start">
-                      <span className="text-blue-400 mr-2">•</span>
-                      {service}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/e8d78561-2814-4d78-b4e9-9d1557a18d84.png"
+                  alt="Commercial electrical work"
+                  className="rounded-lg shadow-lg w-full max-w-md h-48 object-cover"
+                />
+              </div>
+              <Card className="glass-effect border-blue-900/50">
+                <CardHeader>
+                  <CardTitle className="text-white text-xl">Commercial Electrical Services</CardTitle>
+                  <CardDescription className="text-gray-300">
+                    We offer a complete design and implementation of commercial electrical installations, at all times adhering to current SANS regulations and safety practices.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {commercialServices.map((service, index) => (
+                      <li key={index} className="text-gray-300 flex items-start">
+                        <span className="text-blue-400 mr-2">•</span>
+                        {service}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Residential Services */}
-            <Card className="glass-effect border-blue-900/50">
-              <CardHeader>
-                <CardTitle className="text-white text-xl">Residential Electrical Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {residentialServices.map((service, index) => (
-                    <li key={index} className="text-gray-300 flex items-start">
-                      <span className="text-blue-400 mr-2">•</span>
-                      {service}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/2f30a0b5-216a-45c9-8c37-67cd3ea116d9.png"
+                  alt="Electrical tools and equipment"
+                  className="rounded-lg shadow-lg w-full max-w-md h-48 object-cover"
+                />
+              </div>
+              <Card className="glass-effect border-blue-900/50">
+                <CardHeader>
+                  <CardTitle className="text-white text-xl">Residential Electrical Services</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {residentialServices.map((service, index) => (
+                      <li key={index} className="text-gray-300 flex items-start">
+                        <span className="text-blue-400 mr-2">•</span>
+                        {service}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Solar Services */}
-            <Card className="glass-effect border-blue-900/50">
-              <CardHeader>
-                <CardTitle className="text-white text-xl">Solar Installations</CardTitle>
-                <CardDescription className="text-gray-300">
-                  Harness the Power of the sun with CA Electrical!
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-300">
-                  As a leading provider of solar energy solutions, we are dedicated to delivering clean, sustainable, and cost-effective energy to homes and businesses.
-                </p>
-                <p className="text-gray-300">
-                  We offer turnkey solutions from consultation, through design and finally installation and commissioning. CA Electrical uses City of Cape Town approved inverters and will complete your SSEG registration process with the City from start to finish.
-                </p>
-                <p className="text-gray-300">
-                  We design solar energy systems tailored to your specific energy needs and property characteristics. Solar energy can significantly reduce your electricity bills.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="space-y-6">
+              <div className="flex justify-center">
+                <img 
+                  src="/lovable-uploads/364c500f-223c-4841-83e7-0f4ec3752f57.png"
+                  alt="Solar panel installation"
+                  className="rounded-lg shadow-lg w-full max-w-md h-48 object-cover"
+                />
+              </div>
+              <Card className="glass-effect border-blue-900/50">
+                <CardHeader>
+                  <CardTitle className="text-white text-xl">Solar Installations</CardTitle>
+                  <CardDescription className="text-gray-300">
+                    Harness the Power of the sun with CA Electrical!
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-gray-300">
+                    As a leading provider of solar energy solutions, we are dedicated to delivering clean, sustainable, and cost-effective energy to homes and businesses.
+                  </p>
+                  <p className="text-gray-300">
+                    We offer turnkey solutions from consultation, through design and finally installation and commissioning. CA Electrical uses City of Cape Town approved inverters and will complete your SSEG registration process with the City from start to finish.
+                  </p>
+                  <p className="text-gray-300">
+                    We design solar energy systems tailored to your specific energy needs and property characteristics. Solar energy can significantly reduce your electricity bills.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
