@@ -74,8 +74,26 @@ const ElectricalServices = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-20 pb-16 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=6000&q=80)',
+          }}
+        >
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+        
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10 z-10">
+          <div className="absolute top-20 left-10 w-32 h-32 border border-blue-400 rounded-full"></div>
+          <div className="absolute bottom-32 right-16 w-24 h-24 border border-blue-300 rounded-full"></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-500 rounded-full blur-xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               <span className="text-gradient">CA Electrical</span> Solutions
