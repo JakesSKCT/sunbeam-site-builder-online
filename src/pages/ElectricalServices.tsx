@@ -70,11 +70,11 @@ const ElectricalServices = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900">
+    <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
+      {/* Hero Section - Dark Background */}
+      <section className="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -111,14 +111,14 @@ const ElectricalServices = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16">
+      {/* About Section - Light Background */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="glass-effect border-blue-900/50 p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
-              Welcome to <span className="text-gradient">CA Electrical</span>
+          <Card className="bg-white border-gray-200 p-8 shadow-lg">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8">
+              Welcome to <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">CA Electrical</span>
             </h2>
-            <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
+            <div className="text-gray-700 space-y-4 text-lg leading-relaxed">
               <p>
                 CA Electrical is a Cape Town based electrical company owned by 3 dynamic individuals with a collective experience of 75+ years in the construction, electrical and solar industries. Established in 2016, the company has grown exponentially, now servicing clients in various industries including retail, commercial, industrial, education and healthcare.
               </p>
@@ -133,8 +133,8 @@ const ElectricalServices = () => {
         </div>
       </section>
 
-      {/* Industries Section */}
-      <section className="py-16">
+      {/* Industries Section - Dark Background */}
+      <section className="py-16 bg-gradient-to-br from-black via-gray-900 to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -156,27 +156,27 @@ const ElectricalServices = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16">
+      {/* Services Section - Light Background */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Our <span className="text-gradient">Services</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+            Our <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Services</span>
           </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Commercial Services */}
-            <Card className="glass-effect border-blue-900/50">
+            <Card className="bg-white border-gray-200 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-white text-xl">Commercial Electrical Services</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardTitle className="text-gray-900 text-xl">Commercial Electrical Services</CardTitle>
+                <CardDescription className="text-gray-600">
                   We offer a complete design and implementation of commercial electrical installations, at all times adhering to current SANS regulations and safety practices.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   {commercialServices.map((service, index) => (
-                    <li key={index} className="text-gray-300 flex items-start">
-                      <span className="text-blue-400 mr-2">•</span>
+                    <li key={index} className="text-gray-700 flex items-start">
+                      <span className="text-blue-600 mr-2">•</span>
                       {service}
                     </li>
                   ))}
@@ -185,15 +185,15 @@ const ElectricalServices = () => {
             </Card>
 
             {/* Residential Services */}
-            <Card className="glass-effect border-blue-900/50">
+            <Card className="bg-white border-gray-200 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-white text-xl">Residential Electrical Services</CardTitle>
+                <CardTitle className="text-gray-900 text-xl">Residential Electrical Services</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   {residentialServices.map((service, index) => (
-                    <li key={index} className="text-gray-300 flex items-start">
-                      <span className="text-blue-400 mr-2">•</span>
+                    <li key={index} className="text-gray-700 flex items-start">
+                      <span className="text-blue-600 mr-2">•</span>
                       {service}
                     </li>
                   ))}
@@ -202,21 +202,21 @@ const ElectricalServices = () => {
             </Card>
 
             {/* Solar Services */}
-            <Card className="glass-effect border-blue-900/50">
+            <Card className="bg-white border-gray-200 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-white text-xl">Solar Installations</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardTitle className="text-gray-900 text-xl">Solar Installations</CardTitle>
+                <CardDescription className="text-gray-600">
                   Harness the Power of the sun with CA Electrical!
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-gray-300">
+                <p className="text-gray-700">
                   As a leading provider of solar energy solutions, we are dedicated to delivering clean, sustainable, and cost-effective energy to homes and businesses.
                 </p>
-                <p className="text-gray-300">
+                <p className="text-gray-700">
                   We offer turnkey solutions from consultation, through design and finally installation and commissioning. CA Electrical uses City of Cape Town approved inverters and will complete your SSEG registration process with the City from start to finish.
                 </p>
-                <p className="text-gray-300">
+                <p className="text-gray-700">
                   We design solar energy systems tailored to your specific energy needs and property characteristics. Solar energy can significantly reduce your electricity bills.
                 </p>
               </CardContent>
@@ -225,8 +225,8 @@ const ElectricalServices = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16">
+      {/* Why Choose Us - Dark Background */}
+      <section className="py-16 bg-gradient-to-br from-black via-gray-900 to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -252,26 +252,26 @@ const ElectricalServices = () => {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-16">
+      {/* Contact CTA - Light Background */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Card className="glass-effect border-blue-900/50 p-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <Card className="bg-white border-gray-200 shadow-lg p-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
               Ready to Start Your Next Electrical Project?
             </h3>
-            <p className="text-gray-300 mb-8 text-lg">
+            <p className="text-gray-700 mb-8 text-lg">
               Contact our expert team today for a free consultation and quote on your electrical project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-blue-400">
+              <div className="flex items-center text-blue-600">
                 <Phone className="h-5 w-5 mr-2" />
                 <span>+27 21 123 4567</span>
               </div>
-              <div className="flex items-center text-blue-400">
+              <div className="flex items-center text-blue-600">
                 <Mail className="h-5 w-5 mr-2" />
                 <span>info@ca-electrical.co.za</span>
               </div>
-              <div className="flex items-center text-blue-400">
+              <div className="flex items-center text-blue-600">
                 <MapPin className="h-5 w-5 mr-2" />
                 <span>Cape Town, South Africa</span>
               </div>
