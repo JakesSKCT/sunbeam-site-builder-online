@@ -27,7 +27,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
+            <Link to="/electrical-services" className="flex items-center" onClick={closeMobileMenu}>
               <img 
                 src="/lovable-uploads/9646ac87-2641-4661-82ae-a9af61a5184b.png" 
                 alt="C A Electrical Services" 
@@ -40,9 +40,9 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <Link
-                to="/"
+                to="/electrical-services"
                 className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
+                  isActive("/electrical-services") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
                 }`}
@@ -70,14 +70,14 @@ const Navigation = () => {
                 Services
               </Link>
               <Link
-                to="/electrical-services"
+                to="/"
                 className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
-                  isActive("/electrical-services") 
+                  isActive("/") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
                 }`}
               >
-                Electrical Services
+                Solar
               </Link>
               <Link
                 to="/promotions"
@@ -129,10 +129,10 @@ const Navigation = () => {
           <div className="md:hidden border-t border-blue-900/50">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
-                to="/"
+                to="/electrical-services"
                 onClick={closeMobileMenu}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
+                  isActive("/electrical-services") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
                 }`}
@@ -162,15 +162,15 @@ const Navigation = () => {
                 Services
               </Link>
               <Link
-                to="/electrical-services"
+                to="/"
                 onClick={closeMobileMenu}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                  isActive("/electrical-services") 
+                  isActive("/") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-300 hover:text-blue-400 hover:bg-gray-800/50"
                 }`}
               >
-                Electrical Services
+                Solar
               </Link>
               <Link
                 to="/promotions"
