@@ -1,7 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
@@ -21,6 +21,11 @@ const Navigation = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Scroll to top on route change
+  useEffect(() => {
+    scrollToTop();
+  }, [location.pathname]);
   
   return (
     <nav className="bg-white backdrop-blur-sm border-b border-gray-200 shadow-lg sticky top-0 z-50">
@@ -29,7 +34,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/electrical-services" className="flex items-center" onClick={closeMobileMenu}>
               <img 
-                src="/lovable-uploads/85563512-c11a-417a-9a5d-4984da16eac5.png" 
+                src="/lovable-uploads/d57bf45b-aa76-41d5-8edf-37e9ed13ae0c.png" 
                 alt="C A Electrical Services" 
                 className="h-16 w-auto"
               />
@@ -102,11 +107,11 @@ const Navigation = () => {
             </div>
           </div>
           
-          {/* Desktop Get Quote Button */}
+          {/* Desktop Contact Us Button */}
           <div className="hidden md:block">
             <Link to="/contact" onClick={scrollToTop}>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
-                Get Quote
+                Contact Us
               </Button>
             </Link>
           </div>
@@ -197,7 +202,7 @@ const Navigation = () => {
               <div className="pt-4">
                 <Link to="/contact" onClick={() => { closeMobileMenu(); scrollToTop(); }}>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
-                    Get Quote
+                    Contact Us
                   </Button>
                 </Link>
               </div>

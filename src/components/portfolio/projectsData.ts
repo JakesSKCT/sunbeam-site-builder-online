@@ -81,7 +81,7 @@ export const projects: Project[] = [
     title: "Rooftop Solar - Revo Properties",
     location: "Versveld Avenue, Constantia Heights",
     type: "Commercial",
-    images: ["https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"],
+    images: ["/lovable-uploads/233ba52a-d6ed-45ff-aec7-508106159cae.png"],
     systemSize: "30kW",
     pvCapacity: "14kWp",
     batteryCapacity: "20kWh",

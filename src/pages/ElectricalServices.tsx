@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Zap, Shield, Clock, Users, Building, Factory, GraduationCap, Heart, Building2, ShoppingBag } from "lucide-react";
 
 const ElectricalServices = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const industries = [
     { name: "Commercial", icon: <Building className="h-6 w-6" /> },
     { name: "Retail", icon: <ShoppingBag className="h-6 w-6" /> },
@@ -76,7 +80,7 @@ const ElectricalServices = () => {
       <Navigation />
       
       {/* Hero Section - Dark Background with New Electrical Image - Reduced Size */}
-      <section className="relative pt-20 pb-60 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900 h-[75vh]">
+      <section className="relative pt-20 pb-40 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900 h-[85vh]">
         {/* Background Image - Your uploaded electrical image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -95,11 +99,16 @@ const ElectricalServices = () => {
           <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-500 rounded-full blur-xl"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex items-end justify-start h-full pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 flex items-end justify-start h-full pb-16">
           <div className="text-left">
-            <p className="text-4xl md:text-5xl text-white max-w-4xl font-light">
-              Electrical subcontractors for high-end commercial, industrial and solar projects.
+            <p className="text-4xl md:text-5xl text-white max-w-4xl font-light mb-8">
+              Electrical contractors for high-end commercial, industrial and solar projects.
             </p>
+            <Link to="/contact" onClick={scrollToTop}>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500 text-lg">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
