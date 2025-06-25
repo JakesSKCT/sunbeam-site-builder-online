@@ -1,8 +1,9 @@
+
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-gray-800 text-white py-12">
+    <footer className="bg-gradient-to-br from-black via-gray-900 to-blue-900 border-t border-blue-900/50 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-6">
@@ -19,16 +20,16 @@ const Footer = () => {
           <div className="mb-8 space-y-3 text-gray-300">
             <div className="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-3 md:space-y-0">
               <div className="flex items-center justify-center space-x-2">
-                <Phone className="h-4 w-4 text-blue-400" />
+                <Phone className="h-4 w-4 text-blue-500" />
                 <span>+27 21 001 7720</span>
               </div>
               <div className="flex items-center justify-center space-x-2">
-                <Mail className="h-4 w-4 text-blue-400" />
+                <Mail className="h-4 w-4 text-blue-500" />
                 <span>enquiries@caelectrical.co.za</span>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-2 mt-3">
-              <MapPin className="h-4 w-4 text-blue-400" />
+              <MapPin className="h-4 w-4 text-blue-500" />
               <span className="text-center">Unit N7 Athlone Industrial Park, 10 Mymoena Crescent, Athlone Industria 2, Cape Town, 7764</span>
             </div>
           </div>

@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Zap, Shield, Clock, Users, Building, Factory, GraduationCap, Heart, Building2, ShoppingBag } from "lucide-react";
 
 const ElectricalServices = () => {
@@ -104,13 +106,17 @@ const ElectricalServices = () => {
       {/* New Section with Moved Text - Light Background */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-lg text-blue-600 mb-6">
-              We have over 70 years combined experience
-            </p>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Partner with skilled, experienced professionals on your next project. You're in good company with us.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left">
+              <p className="text-2xl text-blue-600 font-semibold">
+                We have over 70 years combined experience
+              </p>
+            </div>
+            <div className="text-right">
+              <p className="text-lg text-gray-700">
+                Partner with skilled, experienced professionals on your next project. You're in good company with us.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -305,20 +311,11 @@ const ElectricalServices = () => {
             <p className="text-gray-300 mb-8 text-lg">
               Contact our expert team today for a free consultation and quote on your electrical project.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="flex items-center text-blue-400">
-                <Phone className="h-5 w-5 mr-2" />
-                <span>+27 21 123 4567</span>
-              </div>
-              <div className="flex items-center text-blue-400">
-                <Mail className="h-5 w-5 mr-2" />
-                <span>info@ca-electrical.co.za</span>
-              </div>
-              <div className="flex items-center text-blue-400">
-                <MapPin className="h-5 w-5 mr-2" />
-                <span>Cape Town, South Africa</span>
-              </div>
-            </div>
+            <Link to="/contact">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500 text-lg">
+                Contact Us
+              </Button>
+            </Link>
           </Card>
         </div>
       </section>
