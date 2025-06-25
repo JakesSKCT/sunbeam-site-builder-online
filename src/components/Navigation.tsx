@@ -25,13 +25,13 @@ const Navigation = () => {
   return (
     <nav className="bg-white backdrop-blur-sm border-b border-gray-200 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           <div className="flex items-center">
             <Link to="/electrical-services" className="flex items-center" onClick={closeMobileMenu}>
               <img 
-                src="/lovable-uploads/9646ac87-2641-4661-82ae-a9af61a5184b.png" 
+                src="/lovable-uploads/85563512-c11a-417a-9a5d-4984da16eac5.png" 
                 alt="C A Electrical Services" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
           </div>
@@ -48,6 +48,16 @@ const Navigation = () => {
                 }`}
               >
                 Home
+              </Link>
+              <Link
+                to="/"
+                className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
+                  isActive("/") 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+                }`}
+              >
+                Solar
               </Link>
               <Link
                 to="/about"
@@ -68,16 +78,6 @@ const Navigation = () => {
                 }`}
               >
                 Services
-              </Link>
-              <Link
-                to="/"
-                className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
-                }`}
-              >
-                Solar
               </Link>
               <Link
                 to="/promotions"
@@ -140,6 +140,17 @@ const Navigation = () => {
                 Home
               </Link>
               <Link
+                to="/"
+                onClick={closeMobileMenu}
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                  isActive("/") 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
+                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
+                }`}
+              >
+                Solar
+              </Link>
+              <Link
                 to="/about"
                 onClick={closeMobileMenu}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
@@ -160,17 +171,6 @@ const Navigation = () => {
                 }`}
               >
                 Services
-              </Link>
-              <Link
-                to="/"
-                onClick={closeMobileMenu}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
-                }`}
-              >
-                Solar
               </Link>
               <Link
                 to="/promotions"

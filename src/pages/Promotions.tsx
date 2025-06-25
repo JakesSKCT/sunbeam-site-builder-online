@@ -1,10 +1,11 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const Promotions = () => {
   const promotions = [
@@ -207,8 +208,9 @@ const Promotions = () => {
               </Button>
             </Link>
             <a href="https://wa.me/27813211094" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-black px-8 py-4 text-lg font-semibold">
-                WhatsApp: 081 321 1094
+              <Button size="lg" className="bg-green-400 hover:bg-green-500 text-black px-8 py-4 text-lg font-semibold flex items-center gap-2">
+                <MessageCircle className="h-5 w-5" />
+                WhatsApp
               </Button>
             </a>
           </div>

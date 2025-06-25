@@ -27,7 +27,7 @@ export const projects: Project[] = [
     systemSize: "20kW",
     pvCapacity: "25kWp",
     batteryCapacity: "20kWh",
-    description: "Large-scale solar installation for office complex, significantly reducing operational costs and carbon footprint.",
+    description: "Large-scale solar installation for school, significantly reducing operational costs and carbon footprint.",
     features: ["Commercial-grade panels", "Three-phase inverters", "Grid-tie system", "Remote monitoring"],
     year: "2024"
   },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Rooftop Solar - Clanwilliam Firestation",
+    title: "Rooftop Solar - Clanwilliam Fire Station",
     location: "Clanwilliam, Western Cape",
     type: "Commercial",
     images: [
@@ -54,36 +54,36 @@ export const projects: Project[] = [
       "/lovable-uploads/340af66c-d27d-4a01-8a47-b35be5c77703.png"
     ],
     systemSize: "30kW",
-    pvCapacity: "36kWp",
+    pvCapacity: "15.4kWp",
     batteryCapacity: "20kWh",
-    description: "Compact solar solution for apartment complex, maximizing limited roof space for optimal energy generation.",
-    features: ["High-efficiency panels", "Microinverters", "Compact battery", "App monitoring"],
+    description: "Compact solar solution for Fire Station, maximizing limited roof space for optimal energy generation.",
+    features: ["High-efficiency panels", "Hybrid Inverter", "HV Battery", "App monitoring"],
     year: "2023"
   },
   {
     id: 5,
-    title: "Rooftop Solar - Vredendal Firestation",
+    title: "Rooftop Solar - Vredendal Fire Station",
     location: "Vredendal, Western Cape",
-    type: "Industrial",
+    type: "Commercial",
     images: [
       "/lovable-uploads/17957879-e94e-46ed-8a6a-5b80ff8418ae.png",
       "/lovable-uploads/dea6f3c2-0054-4f42-bc0a-23a9fed93da2.png"
     ],
     systemSize: "30kW",
-    pvCapacity: "35kWp",
+    pvCapacity: "15.4kWp",
     batteryCapacity: "20kWh",
-    description: "Large industrial solar array for warehouse operations, providing significant cost savings and reliability.",
-    features: ["Industrial panels", "Central inverters", "SCADA monitoring", "Grid integration"],
+    description: "Compact solar solution for Fire Station, maximizing limited roof space for optimal energy generation.",
+    features: ["High-efficiency panels", "Hybrid Inverter", "HV Battery", "App monitoring"],
     year: "2023"
   },
   {
     id: 6,
-    title: "Emcon - Lansdowne",
-    location: "Lansdowne, Cape Town",
+    title: "Rooftop Solar - Revo Properties",
+    location: "Versveld Avenue, Constantia Heights",
     type: "Commercial",
     images: ["https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"],
     systemSize: "30kW",
-    pvCapacity: "36kWp",
+    pvCapacity: "14kWp",
     batteryCapacity: "20kWh",
     description: "Premium solar installation with stunning ocean views, combining aesthetics with high performance.",
     features: ["Premium panels", "Hybrid inverter", "LiFePO4 batteries", "Smart home integration"],
