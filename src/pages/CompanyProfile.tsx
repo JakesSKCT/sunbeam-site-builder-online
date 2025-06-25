@@ -287,28 +287,6 @@ const CompanyProfile = () => {
           <li>4. Click "Save"</li>
         </ol>
       </div>
-
-      {/* Print-specific styles */}
-      <style jsx>{`
-        @media print {
-          body { 
-            font-size: 12pt; 
-            line-height: 1.4;
-          }
-          .print\\:text-3xl { font-size: 24pt; }
-          .print\\:text-xl { font-size: 18pt; }
-          .print\\:text-lg { font-size: 16pt; }
-          .print\\:h-16 { height: 4rem; }
-          .print\\:mb-6 { margin-bottom: 1.5rem; }
-          .print\\:py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-          .print\\:px-0 { padding-left: 0; padding-right: 0; }
-          .print\\:shadow-none { box-shadow: none; }
-          .print\\:border-2 { border-width: 2px; }
-          .print\\:border-t-2 { border-top-width: 2px; }
-          .print\\:bg-white { background-color: white; }
-          .print\\:hidden { display: none; }
-        }
-      `}</style>
     </div>
   );
 };
