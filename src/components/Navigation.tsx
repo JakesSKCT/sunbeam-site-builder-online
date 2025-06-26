@@ -106,15 +106,6 @@ const Navigation = () => {
               </Link>
             </div>
           </div>
-          
-          {/* Desktop Contact Us Button */}
-          <div className="hidden md:block">
-            <Link to="/contact" onClick={scrollToTop}>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
-                Contact Us
-              </Button>
-            </Link>
-          </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -199,13 +190,6 @@ const Navigation = () => {
               >
                 Contact
               </Link>
-              <div className="pt-4">
-                <Link to="/contact" onClick={() => { closeMobileMenu(); scrollToTop(); }}>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold shadow-lg shadow-blue-600/25 border border-blue-500">
-                    Contact Us
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         )}

@@ -1,58 +1,16 @@
 
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 import Footer from "@/components/sections/Footer";
 import { 
   Phone, 
   Mail, 
   MapPin, 
   Clock,
-  MessageSquare,
-  Calculator
+  MessageSquare
 } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    propertyType: "",
-    serviceType: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Quote Request Submitted!",
-      description: "We'll contact you within 24 hours to schedule your consultation.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      propertyType: "",
-      serviceType: "",
-      message: ""
-    });
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -63,116 +21,39 @@ const Contact = () => {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Ready to start your solar journey? Get in touch for a free consultation and quote
+              Visit our location or get in touch for solar energy solutions
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Map & Contact Info */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             
-            {/* Contact Form */}
+            {/* Google Map */}
             <div>
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center">
-                    <Calculator className="h-6 w-6 text-blue-600 mr-2" />
-                    Get Your Free Quote
+                    <MapPin className="h-6 w-6 text-blue-600 mr-2" />
+                    Our Location
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="name">Full Name *</Label>
-                        <Input
-                          id="name"
-                          value={formData.name}
-                          onChange={(e) => handleInputChange("name", e.target.value)}
-                          required
-                          className="mt-1"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="email">Email Address *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => handleInputChange("email", e.target.value)}
-                          required
-                          className="mt-1"
-                        />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="phone">Phone Number *</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange("phone", e.target.value)}
-                        required
-                        className="mt-1"
-                        placeholder="+27 XX XXX XXXX"
-                      />
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="propertyType">Property Type *</Label>
-                        <Select onValueChange={(value) => handleInputChange("propertyType", value)} required>
-                          <SelectTrigger className="mt-1">
-                            <SelectValue placeholder="Select property type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="residential">Residential Home</SelectItem>
-                            <SelectItem value="apartment">Apartment/Flat</SelectItem>
-                            <SelectItem value="office">Office Building</SelectItem>
-                            <SelectItem value="retail">Retail Space</SelectItem>
-                            <SelectItem value="industrial">Industrial Facility</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      
-                      <div>
-                        <Label htmlFor="serviceType">Service Interest *</Label>
-                        <Select onValueChange={(value) => handleInputChange("serviceType", value)} required>
-                          <SelectTrigger className="mt-1">
-                            <SelectValue placeholder="Select service" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="solar-installation">Solar Installation</SelectItem>
-                            <SelectItem value="battery-storage">Battery Storage</SelectItem>
-                            <SelectItem value="energy-audit">Energy Audit</SelectItem>
-                            <SelectItem value="maintenance">Maintenance/Repair</SelectItem>
-                            <SelectItem value="consultation">Free Consultation</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
-                    <div>
-                      <Label htmlFor="message">Additional Information</Label>
-                      <Textarea
-                        id="message"
-                        value={formData.message}
-                        onChange={(e) => handleInputChange("message", e.target.value)}
-                        className="mt-1"
-                        rows={4}
-                        placeholder="Tell us about your energy needs, current electricity bill, roof size, or any specific requirements..."
-                      />
-                    </div>
-
-                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                      Submit Quote Request
-                    </Button>
-                  </form>
+                <CardContent className="p-0">
+                  <div className="w-full h-96 rounded-lg overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.8!2d18.4823!3d-33.9625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d1e6b8b8b8b%3A0x1e6b8b8b8b8b8b8b!2s10%20Mymoena%20Cres%2C%20Athlone%2C%20Cape%20Town%2C%207764%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="C A Electrical Services Location"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
