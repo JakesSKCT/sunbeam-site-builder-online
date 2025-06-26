@@ -32,5 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./dist
-          cname: https://caelectrical.co.za/
+          cname: caelectrical.co.za
           force_orphan: true
