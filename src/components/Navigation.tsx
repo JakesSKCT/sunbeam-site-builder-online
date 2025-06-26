@@ -32,7 +32,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           <div className="flex items-center">
-            <Link to="/electrical-services" className="flex items-center" onClick={closeMobileMenu}>
+            <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
               <img 
                 src="/lovable-uploads/d57bf45b-aa76-41d5-8edf-37e9ed13ae0c.png" 
                 alt="C A Electrical Services" 
@@ -45,9 +45,9 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <Link
-                to="/electrical-services"
+                to="/"
                 className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
-                  isActive("/electrical-services") 
+                  isActive("/") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
                 }`}
@@ -55,9 +55,9 @@ const Navigation = () => {
                 Home
               </Link>
               <Link
-                to="/"
+                to="/solar"
                 className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
+                  isActive("/solar") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
                 }`}
@@ -134,10 +134,10 @@ const Navigation = () => {
           <div className="md:hidden border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
-                to="/electrical-services"
+                to="/"
                 onClick={closeMobileMenu}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                  isActive("/electrical-services") 
+                  isActive("/") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
                 }`}
@@ -145,10 +145,10 @@ const Navigation = () => {
                 Home
               </Link>
               <Link
-                to="/"
+                to="/solar"
                 onClick={closeMobileMenu}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                  isActive("/") 
+                  isActive("/solar") 
                     ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25" 
                     : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
                 }`}
