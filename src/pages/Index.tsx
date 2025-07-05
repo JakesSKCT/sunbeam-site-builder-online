@@ -1,5 +1,6 @@
 
 import Navigation from "@/components/Navigation";
+import SolarPageNavigation from "@/components/SolarPageNavigation";
 import HeroSection from "@/components/sections/HeroSection";
 import FAQSection from "@/components/sections/FAQSection";
 import HowSolarWorksSection from "@/components/sections/HowSolarWorksSection";
@@ -15,16 +16,35 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900">
       <Navigation />
+      <SolarPageNavigation />
       
-      <HeroSection />
-      <FAQSection />
-      <HowSolarWorksSection />
-      <InverterTypesSection />
-      <ElectricityCrisisSection />
-      <CapeTownSolarAdvantages />
-      <LandlordsSection />
-      <WhyChooseUsSection />
-      <CTASection />
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="faq">
+        <FAQSection />
+      </div>
+      <div id="how-solar-works">
+        <HowSolarWorksSection />
+      </div>
+      <div id="inverter-types">
+        <InverterTypesSection />
+      </div>
+      <div id="electricity-crisis">
+        <ElectricityCrisisSection />
+      </div>
+      <div id="cape-town-advantages">
+        <CapeTownSolarAdvantages />
+      </div>
+      <div id="landlords">
+        <LandlordsSection />
+      </div>
+      <div id="why-choose-us">
+        <WhyChooseUsSection />
+      </div>
+      <div id="cta">
+        <CTASection />
+      </div>
       <Footer />
     </div>
   );
