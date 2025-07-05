@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
+import { TrendingUp, Users, Calculator, Clock } from "lucide-react";
 
 const LandlordsSection = () => {
   return (
@@ -38,7 +37,7 @@ const LandlordsSection = () => {
           {/* Attract Quality Tenants */}
           <div className="text-center group">
             <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl border border-blue-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <Home className="h-16 w-16 text-blue-100" />
+              <Users className="h-16 w-16 text-blue-100" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Attract Quality Tenants</h3>
             <div className="bg-blue-900/50 border border-blue-600 p-4 rounded-lg mb-4">
@@ -72,7 +71,7 @@ const LandlordsSection = () => {
           {/* Reliable Investment */}
           <div className="text-center group">
             <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-orange-600 to-orange-700 rounded-3xl border border-orange-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <Shield className="h-16 w-16 text-orange-100" />
+              <Clock className="h-16 w-16 text-orange-100" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Reliable Investment</h3>
             <div className="bg-orange-900/50 border border-orange-600 p-4 rounded-lg mb-4">
