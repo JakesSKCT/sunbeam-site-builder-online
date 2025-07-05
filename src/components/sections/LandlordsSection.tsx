@@ -134,53 +134,23 @@ const LandlordsSection = () => {
               />
             </div>
 
-            {/* Cumulative Income Chart */}
+            {/* Annual and Cumulative Income Chart */}
             <div className="mb-8">
-              <h4 className="text-lg font-semibold text-white mb-4">Cumulative Income</h4>
+              <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
               <img 
-                src="/lovable-uploads/65505455-ce37-45ca-be7f-e423a719910c.png" 
-                alt="Cumulative Income Over Time" 
-                className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-              />
-            </div>
-
-            {/* Cumulative Income */}
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold text-white mb-4">Cumulative Electricity Income over 20 years</h4>
-              <img 
-                src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
-                alt="Cumulative Electricity Income Over 20 Years" 
+                src="/lovable-uploads/ff58b203-2ea0-476f-bfe1-b759b68c256b.png" 
+                alt="Annual and Cumulative Income Over 20 Years" 
                 className="w-full h-auto rounded-lg shadow-md border border-gray-600"
               />
             </div>
 
             {/* Net Income Calculation */}
-            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6 mb-8">
+            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6">
               <h4 className="text-xl font-bold text-white mb-4 text-center">Net Income Calculation</h4>
               <div className="text-center">
                 <p className="text-lg text-gray-300 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
                 <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
                 <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
-              </div>
-            </div>
-
-            {/* Side by Side Charts */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-semibold text-white mb-4 text-center">Cumulative Income</h4>
-                <img 
-                  src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
-                  alt="Cumulative Income Over Time" 
-                  className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-                />
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual Income</h4>
-                <img 
-                  src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
-                  alt="Annual Income Projection" 
-                  className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-                />
               </div>
             </div>
           </div>
