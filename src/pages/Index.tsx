@@ -6,6 +6,7 @@ import HowSolarWorksSection from "@/components/sections/HowSolarWorksSection";
 import InverterTypesSection from "@/components/sections/InverterTypesSection";
 import ElectricityCrisisSection from "@/components/sections/ElectricityCrisisSection";
 import CapeTownSolarAdvantages from "@/components/sections/CapeTownSolarAdvantages";
+import LandlordsSection from "@/components/sections/LandlordsSection";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/sections/Footer";
@@ -21,6 +22,7 @@ const Index = () => {
       <InverterTypesSection />
       <ElectricityCrisisSection />
       <CapeTownSolarAdvantages />
+      <LandlordsSection />
       <WhyChooseUsSection />
       <CTASection />
       <Footer />
