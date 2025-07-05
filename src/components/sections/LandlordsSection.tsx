@@ -16,7 +16,7 @@ const LandlordsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Increased Property Value */}
           <Card className="hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-200">
             <CardHeader className="text-center pb-4">
@@ -98,8 +98,96 @@ const LandlordsSection = () => {
           </Card>
         </div>
 
+        {/* Maximum ROI Section */}
+        <div className="bg-white rounded-2xl p-8 shadow-lg mb-12">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-6">
+            Maximum Return on Investment Strategy
+          </h3>
+          <div className="prose max-w-none text-gray-700 mb-8">
+            <p className="text-lg mb-4">
+              Investing in Solar on your rental property allows you the maximum return on investment. 
+              A solar project which sells back electricity to the grid gives you a return of R1.06c per kWh 
+              of electricity in Cape Town. This is far short of the cost of buying electricity at R3.91c kWh 
+              (using the City's domestic electricity rate).
+            </p>
+            <p className="text-lg mb-4">
+              By installing solar on your roof with a 3rd party prepaid meter you can sell back electricity 
+              to your tenant at the full rate. This significantly increases your ROI and reduces your payback period.
+            </p>
+          </div>
+
+          {/* Case Study */}
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
+            <h4 className="text-xl font-bold text-gray-900 mb-4">Case Study:</h4>
+            <p className="text-gray-700 mb-6">
+              The tenant uses 12,440 kWh per year. Assuming a 12% increase in electricity per annum 
+              (Eskom has averaged over 10 years), and assuming we have a meter to sell back, 
+              your income generation potential is as follows:
+            </p>
+            
+            {/* Monthly Data Table */}
+            <div className="overflow-x-auto mb-8">
+              <img 
+                src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
+                alt="Monthly Solar Generation and Savings Data" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Solar Income Chart */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Annual Solar Income</h4>
+              <img 
+                src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
+                alt="Annual Solar Income Over Time" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Cumulative Income */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Cumulative Electricity Income over 20 years</h4>
+              <img 
+                src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
+                alt="Cumulative Electricity Income Over 20 Years" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Net Income Calculation */}
+            <div className="bg-white rounded-lg p-6 mb-8 border-2 border-green-200">
+              <h4 className="text-xl font-bold text-gray-900 mb-4 text-center">Net Income Calculation</h4>
+              <div className="text-center">
+                <p className="text-lg text-gray-700 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
+                <p className="text-2xl font-bold text-green-700 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
+                <p className="text-sm text-gray-600">Total net savings over system lifetime</p>
+              </div>
+            </div>
+
+            {/* Side by Side Charts */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-center">Cumulative Income</h4>
+                <img 
+                  src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
+                  alt="Cumulative Income Over Time" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-center">Annual Income</h4>
+                <img 
+                  src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
+                  alt="Annual Income Projection" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Additional Benefits Section */}
-        <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+        <div className="bg-white rounded-2xl p-8 shadow-lg">
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Why Solar Makes Sense for Rental Properties
           </h3>
@@ -118,10 +206,10 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-blue-400 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">$</span>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">ROI in 4-6 Years</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">ROI in 2-3 Years</h4>
               <p className="text-gray-600 text-sm">
-                With rental premiums, tax benefits, and property value increases, 
-                solar installations typically pay for themselves within 4-6 years.
+                With direct electricity sales to tenants, tax benefits, and property value increases, 
+                solar installations can pay for themselves within 2-3 years.
               </p>
             </div>
             <div className="text-center">
