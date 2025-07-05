@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
 
@@ -134,12 +133,12 @@ const LandlordsSection = () => {
               />
             </div>
 
-            {/* Solar Income Chart */}
+            {/* Cumulative Income Chart */}
             <div className="mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Annual Solar Income</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Cumulative Income</h4>
               <img 
-                src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
-                alt="Annual Solar Income Over Time" 
+                src="/lovable-uploads/65505455-ce37-45ca-be7f-e423a719910c.png" 
+                alt="Cumulative Income Over Time" 
                 className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
