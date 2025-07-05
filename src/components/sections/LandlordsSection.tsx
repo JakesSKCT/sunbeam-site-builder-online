@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
 
 const LandlordsSection = () => {
@@ -124,13 +125,32 @@ const LandlordsSection = () => {
               your income generation potential is as follows:
             </p>
             
-            {/* Monthly Data Table */}
+            {/* Monthly Data Table with Modal */}
             <div className="overflow-x-auto mb-8">
-              <img 
-                src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
-                alt="Monthly Solar Generation and Savings Data" 
-                className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-              />
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="cursor-pointer hover:opacity-90 transition-opacity">
+                    <img 
+                      src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
+                      alt="Monthly Solar Generation and Savings Data - Click to enlarge" 
+                      className="w-full h-auto rounded-lg shadow-md border border-gray-600 hover:border-blue-400 transition-colors"
+                    />
+                    <p className="text-center text-sm text-blue-300 mt-2">Click to view larger image</p>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-center">Monthly Solar Generation and Savings Data</DialogTitle>
+                  </DialogHeader>
+                  <div className="mt-4">
+                    <img 
+                      src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
+                      alt="Monthly Solar Generation and Savings Data" 
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
 
             {/* Net Income Calculation */}
