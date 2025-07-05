@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
 
@@ -124,53 +125,33 @@ const LandlordsSection = () => {
               your income generation potential is as follows:
             </p>
             
-            {/* Rising Electricity Costs Context */}
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Understanding Rising Electricity Costs</h4>
-              <img 
-                src="/lovable-uploads/bbec21a2-ebb1-4e2c-bfd8-b0f9df810833.png" 
-                alt="Graph showing dramatic Eskom tariff increases vs inflation - tariffs rose 653% while inflation only increased 129% from 2007-2022" 
-                className="w-full h-auto rounded-lg shadow-md mb-4"
-              />
-              <p className="text-gray-600 text-sm mb-6">
-                As shown above, Eskom tariffs have increased 653% compared to inflation's 129% increase since 2007. 
-                This trend makes solar an essential hedge against future electricity cost increases.
-              </p>
-            </div>
-
             {/* Monthly Data Table */}
             <div className="overflow-x-auto mb-8">
               <img 
                 src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
-                alt="Monthly Solar Generation and Savings Data showing consistent returns throughout the year" 
+                alt="Monthly Solar Generation and Savings Data" 
                 className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
 
-            {/* Solar Income Projections with Rising Cost Context */}
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Annual Solar Income Growth</h4>
-                <img 
-                  src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
-                  alt="Annual Solar Income projection showing exponential growth due to rising electricity costs" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-sm text-gray-600 mt-2">
-                  Income grows exponentially as electricity prices continue to rise faster than inflation
-                </p>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Cumulative Income Benefits</h4>
-                <img 
-                  src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
-                  alt="Cumulative Electricity Income over 20 years showing massive long-term savings" 
-                  className="w-full h-auto rounded-lg shadow-md"
-                />
-                <p className="text-sm text-gray-600 mt-2">
-                  Total savings compound over time, protecting against escalating electricity costs
-                </p>
-              </div>
+            {/* Solar Income Chart */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Annual Solar Income</h4>
+              <img 
+                src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
+                alt="Annual Solar Income Over Time" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Cumulative Income */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Cumulative Electricity Income over 20 years</h4>
+              <img 
+                src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
+                alt="Cumulative Electricity Income Over 20 Years" 
+                className="w-full h-auto rounded-lg shadow-md"
+              />
             </div>
 
             {/* Net Income Calculation */}
@@ -179,7 +160,27 @@ const LandlordsSection = () => {
               <div className="text-center">
                 <p className="text-lg text-gray-700 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
                 <p className="text-2xl font-bold text-green-700 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
-                <p className="text-sm text-gray-600">Total net savings over system lifetime, protected from rising electricity costs</p>
+                <p className="text-sm text-gray-600">Total net savings over system lifetime</p>
+              </div>
+            </div>
+
+            {/* Side by Side Charts */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-center">Cumulative Income</h4>
+                <img 
+                  src="/lovable-uploads/304f73c1-725a-429c-ac2e-85a89c2ba7a9.png" 
+                  alt="Cumulative Income Over Time" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4 text-center">Annual Income</h4>
+                <img 
+                  src="/lovable-uploads/161dbea0-ffdb-4fe6-9bcb-4d1ea6d06783.png" 
+                  alt="Annual Income Projection" 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
               </div>
             </div>
           </div>
