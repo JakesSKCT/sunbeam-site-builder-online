@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { TrendingUp, Users, Calculator, Clock } from "lucide-react";
@@ -19,8 +20,8 @@ const LandlordsSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {/* Increased Property Value */}
           <div className="text-center group">
-            <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-green-600 to-green-700 rounded-3xl border border-green-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <TrendingUp className="h-16 w-16 text-green-100" />
+            <div className="mx-auto mb-8 p-4 bg-green-500/20 rounded-2xl border border-green-500/30 group-hover:bg-green-500/30 transition-colors w-fit">
+              <TrendingUp className="h-12 w-12 text-green-400" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Increased Property Value</h3>
             <div className="bg-green-900/50 border border-green-600 p-4 rounded-lg mb-4">
@@ -36,8 +37,8 @@ const LandlordsSection = () => {
 
           {/* Attract Quality Tenants */}
           <div className="text-center group">
-            <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl border border-blue-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <Users className="h-16 w-16 text-blue-100" />
+            <div className="mx-auto mb-8 p-4 bg-blue-500/20 rounded-2xl border border-blue-500/30 group-hover:bg-blue-500/30 transition-colors w-fit">
+              <Users className="h-12 w-12 text-blue-400" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Attract Quality Tenants</h3>
             <div className="bg-blue-900/50 border border-blue-600 p-4 rounded-lg mb-4">
@@ -53,8 +54,8 @@ const LandlordsSection = () => {
 
           {/* Tax Benefits & Incentives */}
           <div className="text-center group">
-            <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-purple-600 to-purple-700 rounded-3xl border border-purple-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <Calculator className="h-16 w-16 text-purple-100" />
+            <div className="mx-auto mb-8 p-4 bg-purple-500/20 rounded-2xl border border-purple-500/30 group-hover:bg-purple-500/30 transition-colors w-fit">
+              <Calculator className="h-12 w-12 text-purple-400" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Tax Benefits</h3>
             <div className="bg-purple-900/50 border border-purple-600 p-4 rounded-lg mb-4">
@@ -70,8 +71,8 @@ const LandlordsSection = () => {
 
           {/* Reliable Investment */}
           <div className="text-center group">
-            <div className="mx-auto mb-8 p-6 bg-gradient-to-br from-orange-600 to-orange-700 rounded-3xl border border-orange-500 w-fit group-hover:scale-110 transition-transform duration-300">
-              <Clock className="h-16 w-16 text-orange-100" />
+            <div className="mx-auto mb-8 p-4 bg-orange-500/20 rounded-2xl border border-orange-500/30 group-hover:bg-orange-500/30 transition-colors w-fit">
+              <Clock className="h-12 w-12 text-orange-400" />
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-white">Reliable Investment</h3>
             <div className="bg-orange-900/50 border border-orange-600 p-4 rounded-lg mb-4">
