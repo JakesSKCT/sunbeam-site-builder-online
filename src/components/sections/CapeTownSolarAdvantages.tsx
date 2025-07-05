@@ -1,5 +1,7 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, CloudSun } from "lucide-react";
+import { MapPin, CloudSun, Home } from "lucide-react";
+
 const CapeTownSolarAdvantages = () => {
   return <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,7 +12,7 @@ const CapeTownSolarAdvantages = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           
           {/* Location & Climate Advantages */}
           <Card className="hover:shadow-lg transition-shadow">
@@ -76,8 +78,47 @@ const CapeTownSolarAdvantages = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Benefits for Landlords */}
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <Home className="h-12 w-12 text-green-600 mb-4" />
+              <CardTitle className="text-2xl">Benefits for Landlords</CardTitle>
+              <CardDescription>Increase property value and attract quality tenants</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Property Investment Benefits:</h4>
+                <ul className="text-sm text-green-700 space-y-1">
+                  <li>• Increase property value by 10-15%</li>
+                  <li>• Attract environmentally conscious tenants</li>
+                  <li>• Command higher rental prices with lower utilities</li>
+                  <li>• Stand out in competitive rental market</li>
+                </ul>
+              </div>
+              <div className="bg-teal-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-teal-800 mb-2">Tenant Advantages:</h4>
+                <ul className="text-sm text-teal-700 space-y-1">
+                  <li>• Reduced electricity bills for tenants</li>
+                  <li>• Reliable power during load shedding</li>
+                  <li>• Lower vacancy rates and tenant turnover</li>
+                  <li>• Positive marketing appeal</li>
+                </ul>
+              </div>
+              <div className="bg-indigo-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-indigo-800 mb-2">Financial Returns:</h4>
+                <ul className="text-sm text-indigo-700 space-y-1">
+                  <li>• Tax incentives and depreciation benefits</li>
+                  <li>• System pays for itself in 4-6 years</li>
+                  <li>• 25+ year warranty on solar panels</li>
+                  <li>• Hedge against rising electricity costs</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>;
 };
+
 export default CapeTownSolarAdvantages;
