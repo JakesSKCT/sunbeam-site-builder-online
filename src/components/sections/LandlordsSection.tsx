@@ -1,5 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
 
 const LandlordsSection = () => {
@@ -125,20 +126,31 @@ const LandlordsSection = () => {
               your income generation potential is as follows:
             </p>
             
-            {/* Monthly Data Table */}
+            {/* Monthly Data Table - Clickable */}
             <div className="overflow-x-auto mb-8">
-              <img 
-                src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
-                alt="Monthly Solar Generation and Savings Data" 
-                className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-              />
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img 
+                    src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
+                    alt="Monthly Solar Generation and Savings Data" 
+                    className="w-full h-auto rounded-lg shadow-md border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                  />
+                </DialogTrigger>
+                <DialogContent className="max-w-6xl max-h-[90vh] overflow-auto">
+                  <img 
+                    src="/lovable-uploads/e8a9a767-1231-4c48-a4e4-9ac718044950.png" 
+                    alt="Monthly Solar Generation and Savings Data - Full Size" 
+                    className="w-full h-auto"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
 
             {/* Annual and Cumulative Income Chart */}
             <div className="mb-8">
               <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
               <img 
-                src="/lovable-uploads/ff58b203-2ea0-476f-bfe1-b759b68c256b.png" 
+                src="/lovable-uploads/0c65c1f2-51ec-4b2e-b66b-d2247ddd1a16.png" 
                 alt="Annual and Cumulative Income Over 20 Years" 
                 className="w-full h-auto rounded-lg shadow-md border border-gray-600"
               />
@@ -156,9 +168,9 @@ const LandlordsSection = () => {
           </div>
         </div>
 
-        {/* Additional Benefits Section */}
-        <div className="bg-gray-800/60 border border-gray-700 rounded-2xl p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-center text-white mb-8">
+        {/* Additional Benefits Section - Light Theme */}
+        <div className="bg-white/95 border border-gray-200 rounded-2xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Why Solar Makes Sense for Rental Properties
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -166,8 +178,8 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
-              <h4 className="font-semibold text-white mb-2">Rental Premium</h4>
-              <p className="text-gray-300 text-sm">
+              <h4 className="font-semibold text-gray-900 mb-2">Rental Premium</h4>
+              <p className="text-gray-600 text-sm">
                 Charge 10-15% higher rent for solar-equipped properties while providing 
                 real value through reduced electricity costs.
               </p>
@@ -176,8 +188,8 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">$</span>
               </div>
-              <h4 className="font-semibold text-white mb-2">ROI in 2-3 Years</h4>
-              <p className="text-gray-300 text-sm">
+              <h4 className="font-semibold text-gray-900 mb-2">ROI in 2-3 Years</h4>
+              <p className="text-gray-600 text-sm">
                 With direct electricity sales to tenants, tax benefits, and property value increases, 
                 solar installations can pay for themselves within 2-3 years.
               </p>
@@ -186,8 +198,8 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">⚡</span>
               </div>
-              <h4 className="font-semibold text-white mb-2">Load Shedding Solution</h4>
-              <p className="text-gray-300 text-sm">
+              <h4 className="font-semibold text-gray-900 mb-2">Load Shedding Solution</h4>
+              <p className="text-gray-600 text-sm">
                 Offer tenants relief from load shedding with battery backup systems, 
                 making your property highly desirable in the current market.
               </p>
