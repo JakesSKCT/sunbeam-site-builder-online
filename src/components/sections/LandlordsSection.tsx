@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
@@ -146,6 +145,16 @@ const LandlordsSection = () => {
               </Dialog>
             </div>
 
+            {/* Net Income Calculation - Moved above the chart */}
+            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6 mb-8">
+              <h4 className="text-xl font-bold text-white mb-4 text-center">Net Income Calculation</h4>
+              <div className="text-center">
+                <p className="text-lg text-gray-300 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
+                <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
+                <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
+              </div>
+            </div>
+
             {/* Annual and Cumulative Income Chart */}
             <div className="mb-8">
               <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
@@ -155,22 +164,12 @@ const LandlordsSection = () => {
                 className="w-full h-auto rounded-lg shadow-md border border-gray-600"
               />
             </div>
-
-            {/* Net Income Calculation */}
-            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-white mb-4 text-center">Net Income Calculation</h4>
-              <div className="text-center">
-                <p className="text-lg text-gray-300 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
-                <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
-                <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* Additional Benefits Section - Light Theme */}
-        <div className="bg-white/95 border border-gray-200 rounded-2xl p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+        {/* Why Solar Makes Sense - Keep Dark Theme */}
+        <div className="bg-gray-800/60 border border-gray-700 rounded-2xl p-8 shadow-lg mb-12">
+          <h3 className="text-2xl font-bold text-center text-white mb-8">
             Why Solar Makes Sense for Rental Properties
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -178,8 +177,8 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Rental Premium</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="font-semibold text-white mb-2">Rental Premium</h4>
+              <p className="text-gray-300 text-sm">
                 Charge 10-15% higher rent for solar-equipped properties while providing 
                 real value through reduced electricity costs.
               </p>
@@ -188,8 +187,8 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">$</span>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">ROI in 2-3 Years</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="font-semibold text-white mb-2">ROI in 2-3 Years</h4>
+              <p className="text-gray-300 text-sm">
                 With direct electricity sales to tenants, tax benefits, and property value increases, 
                 solar installations can pay for themselves within 2-3 years.
               </p>
@@ -198,10 +197,49 @@ const LandlordsSection = () => {
               <div className="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">⚡</span>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Load Shedding Solution</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="font-semibold text-white mb-2">Load Shedding Solution</h4>
+              <p className="text-gray-300 text-sm">
                 Offer tenants relief from load shedding with battery backup systems, 
                 making your property highly desirable in the current market.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Why Choose C A Electrical - Light Theme */}
+        <div className="bg-white/95 border border-gray-200 rounded-2xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            Why Choose C A Electrical
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">✓</span>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Expert Installation</h4>
+              <p className="text-gray-600 text-sm">
+                Professional installation with certified electricians ensuring 
+                maximum performance and safety compliance.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">⚙</span>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Complete Service</h4>
+              <p className="text-gray-600 text-sm">
+                From initial consultation to ongoing maintenance, 
+                we provide comprehensive solar solutions for landlords.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-teal-500 to-teal-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">★</span>
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Proven Track Record</h4>
+              <p className="text-gray-600 text-sm">
+                Years of experience in Cape Town's solar market with 
+                satisfied landlords and tenants across the city.
               </p>
             </div>
           </div>
