@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, Home, Shield, Calculator } from "lucide-react";
 
@@ -134,24 +133,24 @@ const LandlordsSection = () => {
               />
             </div>
 
-            {/* Annual and Cumulative Income Chart */}
-            <div className="mb-8">
-              <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
-              <img 
-                src="/lovable-uploads/ff58b203-2ea0-476f-bfe1-b759b68c256b.png" 
-                alt="Annual and Cumulative Income Over 20 Years" 
-                className="w-full h-auto rounded-lg shadow-md border border-gray-600"
-              />
-            </div>
-
             {/* Net Income Calculation */}
-            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6">
+            <div className="bg-gray-800/80 border border-green-600/50 rounded-lg p-6 mb-8">
               <h4 className="text-xl font-bold text-white mb-4 text-center">Net Income Calculation</h4>
               <div className="text-center">
                 <p className="text-lg text-gray-300 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
                 <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
                 <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
               </div>
+            </div>
+
+            {/* Annual and Cumulative Income Chart */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
+              <img 
+                src="/lovable-uploads/99c87b52-00c8-4d8e-96ee-3d8e1c5c0053.png" 
+                alt="Annual and Cumulative Income Over 20 Years" 
+                className="w-full h-auto rounded-lg shadow-md border border-gray-600"
+              />
             </div>
           </div>
         </div>
