@@ -5,8 +5,6 @@ const SolarPageNavigation = () => {
   const [activeSection, setActiveSection] = useState("");
 
   const sections = [
-    { id: "hero", label: "Home" },
-    { id: "faq", label: "FAQ" },
     { id: "how-solar-works", label: "How Solar Works" },
     { id: "inverter-types", label: "Inverter Types" },
     { id: "electricity-crisis", label: "Electricity Crisis" },
@@ -19,13 +17,18 @@ const SolarPageNavigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const navHeight = 200; // Account for both main nav and section nav heights
+      const elementPosition = element.offsetTop - navHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 250; // Adjusted offset for better detection
       
       for (const section of sections) {
         const element = document.getElementById(section.id);
