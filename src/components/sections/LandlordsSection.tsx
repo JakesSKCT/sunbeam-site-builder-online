@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { TrendingUp, Users, Calculator, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { TrendingUp, Users, Calculator, Clock, Info } from "lucide-react";
 
 const LandlordsSection = () => {
   return (
@@ -149,6 +150,51 @@ const LandlordsSection = () => {
               <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
               <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
             </div>
+          </div>
+
+          {/* System Performance Assumptions Button */}
+          <div className="text-center mb-8">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  className="bg-blue-600 hover:bg-blue-700 text-white border-blue-500 hover:border-blue-400"
+                >
+                  <Info className="w-4 h-4 mr-2" />
+                  System Performance Assumptions
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-xl text-center">System Performance Assumptions</DialogTitle>
+                </DialogHeader>
+                <div className="mt-4 space-y-4 text-sm">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="mb-2"><strong>System Total losses:</strong> 14.9%</p>
+                    <p className="mb-2"><strong>Inverter losses:</strong> 3.0%</p>
+                    <p className="mb-2"><strong>Optimizer losses:</strong> 0%</p>
+                    <p className="mb-2"><strong>Shading losses:</strong> 0.3%</p>
+                    <p className="mb-2"><strong>Performance Adjustment:</strong> 0%</p>
+                    <p className="mb-4"><strong>Output Calculator:</strong> System Advisor Model 2020.02.29.r2</p>
+                    <p className="mb-4"><strong>Panel Orientations:</strong> 12 panels with Azimuth 355 and Slope 25.</p>
+                  </div>
+                  
+                  <div className="bg-yellow-50 p-4 rounded-lg">
+                    <p className="mb-2">The solar system(s) quoted in this proposal are not intended to be portable.</p>
+                  </div>
+                  
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <p className="mb-2">Estimates do not include replacement costs of equipment not covered by a warranty. Components may need replacement after their warranty period.</p>
+                    <p className="mb-2"><strong>Financial discount rate assumed:</strong> 6.75%</p>
+                  </div>
+                  
+                  <div className="bg-red-50 p-4 rounded-lg">
+                    <p className="mb-2">Price excludes Retailer Smart Meter should you want us to install your Smart Meter it will be an additional cost.</p>
+                    <p><strong>This proposal is valid until:</strong> None.</p>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Annual and Cumulative Income Chart */}
