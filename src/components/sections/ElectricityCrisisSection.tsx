@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, AlertTriangle } from "lucide-react";
 
@@ -14,7 +15,7 @@ const ElectricityCrisisSection = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-1 gap-12">
           
           {/* Rising Electricity Costs */}
           <Card className="bg-gradient-to-br from-gray-900 to-gray-800 border-red-500/30 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300">
@@ -31,43 +32,45 @@ const ElectricityCrisisSection = () => {
                   className="w-full h-auto rounded-lg" 
                 />
               </div>
-              <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 p-6 rounded-xl border border-red-500/30">
-                <h4 className="font-semibold text-red-300 mb-4 text-lg">Dramatic Cost Increases:</h4>
-                <ul className="text-gray-300 space-y-2">
-                  <li className="flex items-center">
-                    <span className="text-red-400 mr-3">▶</span>
-                    2007-2022: Eskom tariffs increased 653%
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-red-400 mr-3">▶</span>
-                    Inflation only increased 129% during the same period
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-red-400 mr-3">▶</span>
-                    Tariffs rising 5x faster than general inflation
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-red-400 mr-3">▶</span>
-                    Trend continues with double-digit annual increases
-                  </li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 p-6 rounded-xl border border-red-500/30">
+                  <h4 className="font-semibold text-red-300 mb-4 text-lg">Dramatic Cost Increases:</h4>
+                  <ul className="text-gray-300 space-y-2">
+                    <li className="flex items-center">
+                      <span className="text-red-400 mr-3">▶</span>
+                      2007-2022: Eskom tariffs increased 653%
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-red-400 mr-3">▶</span>
+                      Inflation only increased 129% during the same period
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-red-400 mr-3">▶</span>
+                      Tariffs rising 5x faster than general inflation
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-red-400 mr-3">▶</span>
+                      Trend continues with double-digit annual increases
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 p-6 rounded-xl border border-green-500/30">
+                  <h4 className="font-semibold text-green-300 mb-3 text-lg">Solar Benefits:</h4>
+                  <p className="text-gray-300">
+                    Lock in your electricity rate for 25+ years and protect 
+                    against future Eskom increases while gaining energy independence.
+                  </p>
+                </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
                 As shown in the graph above, Eskom's tariff increases have dramatically 
                 outpaced inflation since the 2008 electricity crisis. This trend shows 
                 no signs of slowing, making solar an essential hedge against rising costs.
               </p>
-              <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 p-6 rounded-xl border border-green-500/30">
-                <h4 className="font-semibold text-green-300 mb-3 text-lg">Solar Benefits:</h4>
-                <p className="text-gray-300">
-                  Lock in your electricity rate for 25+ years and protect 
-                  against future Eskom increases while gaining energy independence.
-                </p>
-              </div>
             </CardContent>
           </Card>
 
-          {/* Load Shedding Impact */}
+          {/* Load Shedding Impact / Energy Independence */}
           <Card className="bg-gradient-to-br from-gray-900 to-gray-800 border-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300">
             <CardHeader className="pb-6">
               <AlertTriangle className="h-16 w-16 text-orange-400 mb-6" />
