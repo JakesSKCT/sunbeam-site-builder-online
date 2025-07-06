@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -110,7 +111,7 @@ const LandlordsSection = () => {
           <p className="text-gray-300 mb-6">
             A tenant consumes 12,440 kWh per year. By installing a hybrid solar system for R90 000 with a 6kW inverter, 6,6kWp of PV and 10kWh battery, your income generation potential is shown below.
             Assumptions:
-            12.5% increase in electricity per annum (Eskom has averaged 15% over 10 years),
+            15% increase in electricity per annum (Eskom has averaged 15% over 10 years),
             AMI Meter to sell electricity back to the municipality.   
           </p>
           
@@ -148,7 +149,11 @@ const LandlordsSection = () => {
             <div className="text-center">
               <p className="text-lg text-gray-300 mb-2">Net Income = Utility Bill Savings - Net System Cost</p>
               <p className="text-2xl font-bold text-green-400 mb-2">R2,632,163 - R90,000 = R2,542,163</p>
-              <p className="text-sm text-gray-400">Total net savings over system lifetime</p>
+              <p className="text-sm text-gray-400 mb-4">Total net savings over system lifetime</p>
+              <div className="bg-blue-900/50 border border-blue-600 rounded-lg p-4 inline-block">
+                <p className="text-lg font-semibold text-blue-300 mb-1">Return on Investment (ROI)</p>
+                <p className="text-2xl font-bold text-blue-400">2 Years 3 Months</p>
+              </div>
             </div>
           </div>
 
@@ -201,7 +206,7 @@ const LandlordsSection = () => {
           <div className="mb-8">
             <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
             <img 
-              src="/lovable-uploads/99c87b52-00c8-4d8e-96ee-3d8e1c5c0053.png" 
+              src="/lovable-uploads/b8cfb0d2-feb3-45c5-a5d4-57ce24a3b21b.png" 
               alt="Annual and Cumulative Income Over 20 Years" 
               className="w-full h-auto rounded-lg shadow-md border border-gray-600"
             />
