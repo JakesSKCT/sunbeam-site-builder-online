@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { TrendingUp, Users, Calculator, Clock } from "lucide-react";
@@ -108,7 +107,7 @@ const LandlordsSection = () => {
           {/* Case Study - No container */}
           <h4 className="text-xl font-bold text-white mb-4">Case Study:</h4>
           <p className="text-gray-300 mb-6">
-            The tenant uses 12,440 kWh per year. Assuming a 12% increase in electricity per annum 
+            The tenant uses 12,440 kWh per year. Assuming a 15% increase in electricity per annum 
             (Eskom has averaged over 10 years), and assuming we have a meter to sell back, 
             your income generation potential is as follows:
           </p>
