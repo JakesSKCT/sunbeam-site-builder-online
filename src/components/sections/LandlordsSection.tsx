@@ -107,9 +107,10 @@ const LandlordsSection = () => {
           {/* Case Study - No container */}
           <h4 className="text-xl font-bold text-white mb-4">Case Study:</h4>
           <p className="text-gray-300 mb-6">
-            The tenant uses 12,440 kWh per year. Assuming a 15% increase in electricity per annum 
-            (Eskom has averaged over 10 years), and assuming we have a meter to sell back, 
-            your income generation potential is as follows:
+            A tenant consumes 12,440 kWh per year. By installing a hybrid solar system for R90 000 with a 6kW inverter, 6,6kWp of PV and 10kWh battery, your income generation potential is shown below.
+            Assumptions:
+            12.5% increase in electricity per annum (Eskom has averaged 15% over 10 years)
+            AMI Meter to sell electricity back to the municiplaity.   
           </p>
           
           {/* Monthly Data Table with Modal */}
