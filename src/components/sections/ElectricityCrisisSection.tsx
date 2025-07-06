@@ -78,47 +78,49 @@ const ElectricityCrisisSection = () => {
               <CardDescription className="text-gray-400 text-lg">The real cost of load shedding</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 p-6 rounded-xl border border-orange-500/30">
-                <h4 className="font-semibold text-orange-300 mb-4 text-lg">Business Impact:</h4>
-                <ul className="text-gray-300 space-y-2">
-                  <li className="flex items-center">
-                    <span className="text-orange-400 mr-3">▶</span>
-                    Lost productivity during outages
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-orange-400 mr-3">▶</span>
-                    Equipment damage from power surges
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-orange-400 mr-3">▶</span>
-                    Spoiled refrigerated goods
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-orange-400 mr-3">▶</span>
-                    Customer dissatisfaction
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-xl border border-blue-500/30">
-                <h4 className="font-semibold text-blue-300 mb-4 text-lg">Household Challenges:</h4>
-                <ul className="text-gray-300 space-y-2">
-                  <li className="flex items-center">
-                    <span className="text-blue-400 mr-3">▶</span>
-                    No lighting or heating
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-blue-400 mr-3">▶</span>
-                    Internet and communication disruption
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-blue-400 mr-3">▶</span>
-                    Food spoilage and waste
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-blue-400 mr-3">▶</span>
-                    Security system failures
-                  </li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 p-6 rounded-xl border border-orange-500/30">
+                  <h4 className="font-semibold text-orange-300 mb-4 text-lg">Business Impact:</h4>
+                  <ul className="text-gray-300 space-y-2">
+                    <li className="flex items-center">
+                      <span className="text-orange-400 mr-3">▶</span>
+                      Lost productivity during outages
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-orange-400 mr-3">▶</span>
+                      Equipment damage from power surges
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-orange-400 mr-3">▶</span>
+                      Spoiled refrigerated goods
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-orange-400 mr-3">▶</span>
+                      Customer dissatisfaction
+                    </li>
+                  </ul>
+                </div>
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-xl border border-blue-500/30">
+                  <h4 className="font-semibold text-blue-300 mb-4 text-lg">Household Challenges:</h4>
+                  <ul className="text-gray-300 space-y-2">
+                    <li className="flex items-center">
+                      <span className="text-blue-400 mr-3">▶</span>
+                      No lighting or heating
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-blue-400 mr-3">▶</span>
+                      Internet and communication disruption
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-blue-400 mr-3">▶</span>
+                      Food spoilage and waste
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-blue-400 mr-3">▶</span>
+                      Security system failures
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 p-6 rounded-xl border border-green-500/30">
                 <h4 className="font-semibold text-green-300 mb-3 text-lg">Solar Solution:</h4>
