@@ -109,8 +109,8 @@ const LandlordsSection = () => {
           <p className="text-gray-300 mb-6">
             A tenant consumes 12,440 kWh per year. By installing a hybrid solar system for R90 000 with a 6kW inverter, 6,6kWp of PV and 10kWh battery, your income generation potential is shown below.
             Assumptions:
-            12.5% increase in electricity per annum (Eskom has averaged 15% over 10 years)
-            AMI Meter to sell electricity back to the municiplaity.   
+            12.5% increase in electricity per annum (Eskom has averaged 15% over 10 years),
+            AMI Meter to sell electricity back to the municipality.   
           </p>
           
           {/* Monthly Data Table with Modal */}
