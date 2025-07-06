@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -206,7 +207,7 @@ const LandlordsSection = () => {
           <div className="mb-8">
             <h4 className="text-lg font-semibold text-white mb-4 text-center">Annual and Cumulative Income Over 20 Years</h4>
             <img 
-              src="/lovable-uploads/b8cfb0d2-feb3-45c5-a5d4-57ce24a3b21b.png" 
+              src="/lovable-uploads/b47e89af-2cbe-43dd-b1a5-1029a8a5422e.png" 
               alt="Annual and Cumulative Income Over 20 Years" 
               className="w-full h-auto rounded-lg shadow-md border border-gray-600"
             />
@@ -257,3 +258,4 @@ const LandlordsSection = () => {
 };
 
 export default LandlordsSection;
+
